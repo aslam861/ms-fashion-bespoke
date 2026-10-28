@@ -1,0 +1,505 @@
+import os
+
+def generate_html_report():
+    html_content = """<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>M.S Fashion: Bespoke Ethnic Menswear Platform - Project Report</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 15mm 20mm 20mm;
+    @bottom-center {
+      content: counter(page);
+    }
+  }
+  body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 12pt;
+    line-height: 1.25;
+    color: #2B211D;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 20px 40px;
+  }
+  .page {
+    position: relative;
+    box-sizing: border-box;
+    min-height: 297mm;
+    padding: 25px 30px;
+    margin-bottom: 30px;
+    border: 2px solid #5C1A21;
+    background: #FFFFFF;
+    page-break-after: always;
+  }
+  @media print {
+    body { padding: 0; }
+    .page {
+      margin: 0;
+      padding: 20px 25px;
+      border: 2px solid #5C1A21;
+      page-break-after: always;
+    }
+  }
+  h1.doc-title {
+    color: #5C1A21;
+    text-align: center;
+    font-size: 18pt;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+  }
+  h2.chapter-title {
+    color: #5C1A21;
+    text-align: center;
+    font-size: 16pt;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 1.5px solid #A9812F;
+    padding-bottom: 6px;
+  }
+  h3.section-title {
+    color: #5C1A21;
+    font-size: 13pt;
+    font-weight: bold;
+    margin-top: 18px;
+    margin-bottom: 8px;
+  }
+  h4.subsection-title {
+    color: #2B211D;
+    font-size: 12pt;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 12px;
+    margin-bottom: 6px;
+  }
+  p {
+    text-align: justify;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-indent: 0;
+  }
+  ul {
+    margin-top: 4px;
+    margin-bottom: 12px;
+    padding-left: 25px;
+  }
+  li {
+    text-align: justify;
+    margin-bottom: 6px;
+  }
+  .center-text { text-align: center; }
+  .bold { font-weight: bold; }
+  .maroon { color: #5C1A21; }
+  .gold { color: #A9812F; }
+  .figure-box {
+    text-align: center;
+    margin: 16px 0;
+  }
+  .figure-box img {
+    max-width: 90%;
+    max-height: 480px;
+    border: 1px solid #D5C8B5;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  }
+  .figure-caption {
+    font-size: 10pt;
+    font-weight: bold;
+    font-style: italic;
+    color: #5C1A21;
+    margin-top: 6px;
+    margin-bottom: 14px;
+    text-align: center;
+  }
+  .code-container {
+    background-color: #F8F7FA;
+    border: 1px solid #D8D6DE;
+    padding: 12px 14px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 8.5pt;
+    line-height: 1.15;
+    color: #1F1F24;
+    white-space: pre-wrap;
+    word-break: break-word;
+    margin: 12px 0 16px 0;
+    border-radius: 4px;
+  }
+  .code-header {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 11pt;
+    font-weight: bold;
+    color: #5C1A21;
+    margin-bottom: 4px;
+  }
+  table.test-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0 25px 0;
+    font-size: 9pt;
+  }
+  table.test-table th {
+    background-color: #5C1A21;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 8px 6px;
+    border: 1px solid #461319;
+    text-align: left;
+  }
+  table.test-table td {
+    padding: 6px 6px;
+    border: 1px solid #D5C8B5;
+    vertical-align: top;
+  }
+  table.test-table tr:nth-child(even) {
+    background-color: #FAF6EE;
+  }
+  .pass-badge {
+    color: #0F766E;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+
+<!-- PAGE 1: TITLE PAGE -->
+<div class="page center-text">
+  <div style="height: 20px;"></div>
+  <h1 class="doc-title" style="font-size: 20pt; margin-bottom: 12px;">M.S FASHION: BESPOKE ETHNIC MENSWEAR PLATFORM</h1>
+  <p class="bold" style="font-size: 13pt; margin-bottom: 4px;">A Project Report</p>
+  <p style="font-size: 11.5pt; margin-bottom: 4px;">Submitted in Partial fulfilment of the</p>
+  <p style="font-size: 11.5pt; margin-bottom: 8px;">Requirements for the award of the Degree of</p>
+  <p class="bold maroon" style="font-size: 14pt; margin-bottom: 4px;">BACHELOR OF SCIENCE (COMPUTER SCIENCE)</p>
+  <p class="bold" style="font-size: 12pt; margin-bottom: 25px;">SEM V</p>
+
+  <p class="bold maroon" style="font-size: 14pt; margin-bottom: 2px;">By Aslam Ansari</p>
+  <p class="bold" style="font-size: 12pt; margin-bottom: 25px;">Roll No: 05</p>
+
+  <p style="font-size: 11pt; margin-bottom: 2px;">Under the esteemed guidance of</p>
+  <p class="bold maroon" style="font-size: 13pt; margin-bottom: 2px;">Prof. Javed Pathan</p>
+  <p style="font-size: 11pt; margin-bottom: 25px;">Assistant Professor</p>
+
+  <div style="margin: 15px 0;">
+    <img src="report_assets/college_logo_0.png" alt="Rizvi College Logo" style="height: 120px;">
+  </div>
+
+  <p class="bold maroon" style="font-size: 12pt; margin-bottom: 2px;">DEPARTMENT OF COMPUTER SCIENCE</p>
+  <p class="bold maroon" style="font-size: 13pt; margin-bottom: 2px;">RIZVI COLLEGE OF ARTS, SCIENCE AND COMMERCE</p>
+  <p style="font-size: 11pt; margin-bottom: 2px;">(Affiliated to University of Mumbai)</p>
+  <p style="font-size: 11pt; margin-bottom: 4px;">MUMBAI-400050, MAHARASHTRA</p>
+  <p class="bold maroon" style="font-size: 12pt;">2026-2027</p>
+</div>
+
+<!-- PAGE 2: CERTIFICATE -->
+<div class="page">
+  <div class="center-text">
+    <p class="bold maroon" style="font-size: 13pt; margin-bottom: 2px;">RIZVI COLLEGE OF ARTS, SCIENCE AND COMMERCE</p>
+    <p style="font-size: 10.5pt; margin-bottom: 2px;">(Affiliated to University of Mumbai)</p>
+    <p style="font-size: 10.5pt; margin-bottom: 6px;">MUMBAI-MAHARASHTRA-400050</p>
+    <p class="bold maroon" style="font-size: 12pt; margin-bottom: 12px;">DEPARTMENT OF COMPUTER SCIENCE</p>
+    <img src="report_assets/college_logo_0.png" alt="Rizvi Logo" style="height: 90px; margin-bottom: 15px;">
+    <h2 class="doc-title" style="font-size: 16pt; margin: 10px 0 25px 0;">CERTIFICATE</h2>
+  </div>
+
+  <p style="font-size: 12pt; line-height: 1.6; margin: 20px 10px;">
+    This is to certify that the project entitled, <strong>“M.S Fashion: Bespoke Ethnic Menswear Platform”</strong>, is a bonafide work of 
+    <strong>Aslam Ansari</strong> bearing <strong>Roll No: 05</strong> submitted in Partial fulfilment of the requirements for the award of degree of 
+    <strong>BACHELOR OF SCIENCE in COMPUTER SCIENCE SEM V</strong> from University of Mumbai.
+  </p>
+
+  <div style="margin-top: 100px; display: flex; justify-content: space-between; padding: 0 30px;">
+    <div class="center-text">
+      <p>_______________________<br><strong>Project Guide</strong><br>(Prof. Javed Pathan)</p>
+    </div>
+    <div class="center-text">
+      <p>_______________________<br><strong>HOD</strong><br>(Prof. Arif Patel)</p>
+    </div>
+  </div>
+
+  <div style="margin-top: 70px; text-align: center;">
+    <p>_______________________<br><strong>External Examiner</strong></p>
+  </div>
+
+  <div style="margin-top: 60px; display: flex; justify-content: space-between; padding: 0 30px; font-size: 11pt;">
+    <span>Date: ______________</span>
+    <span>College Seal</span>
+  </div>
+</div>
+
+<!-- PAGE 3: ACKNOWLEDGEMENT -->
+<div class="page">
+  <h2 class="chapter-title">ACKNOWLEDGEMENT</h2>
+  <p>I would like to extend my sincere appreciation to the Department of Computer Science at Rizvi College of Arts, Science, and Commerce for providing me with the opportunity to undertake and complete this project dissertation.</p>
+  <p>I am deeply grateful to our Principal, <strong>Dr. Anjum Ara Ahmad</strong>, for her exceptional leadership, institutional vision, and encouragement throughout our academic tenure.</p>
+  <p>I would also like to express my sincere gratitude to the Head of the Department, <strong>Professor Arif Patel</strong>, for his support in terms of providing essential departmental facilities, computing laboratories, and academic guidance throughout the course, which has been instrumental in the completion of this project.</p>
+  <p>I would like to convey my profound thanks to my esteemed project guide, <strong>Professor Javed Pathan</strong>. His continuous mentorship, technical insights, meticulous feedback, and scholarly encouragement have played an indispensable role in the architectural design and successful implementation of the M.S Fashion bespoke platform.</p>
+  <p>Lastly, I am deeply thankful to my dear parents and family members for their unwavering support, moral encouragement, and blessings that sustained my efforts throughout the development of this dissertation.</p>
+  <div style="text-align: right; margin-top: 50px;">
+    <p><strong>Aslam Ansari</strong><br>Roll No: 05</p>
+  </div>
+</div>
+
+<!-- PAGE 4: PLAGIARISM REPORT -->
+<div class="page">
+  <h2 class="chapter-title">PLAGIARISM REPORT</h2>
+  <p>The plagiarism scan report for the M.S Fashion: Bespoke Ethnic Menswear Platform project documentation shows <strong>0% plagiarism</strong>, indicating that no copied or duplicated material was detected during the academic scan. The report records <strong>0% Exact Match</strong> and <strong>0% Partial Match</strong>, meaning that no significant text was found to match unauthorized secondary repositories or public dissertation bases checked by the automated verification engine.</p>
+  <p>The scan demonstrates <strong>100% Unique Content</strong>, confirming that the submitted documentation and architectural specifications represent an original, independent software engineering contribution. Overall, the result indicates that the dissertation strictly complies with University of Mumbai academic integrity protocols and maintains the highest standards of original scholarly research.</p>
+  <div class="figure-box" style="margin-top: 40px;">
+    <img src="report_assets/plagiarism_proof_0.png" alt="DupliChecker Plagiarism Certificate" style="max-width: 80%;">
+    <div class="figure-caption">Figure: Plagiarism Scan Report Certificate (0% Plagiarism / 100% Unique Content)</div>
+  </div>
+</div>
+
+<!-- PAGE 5: DECLARATION -->
+<div class="page">
+  <h2 class="chapter-title">DECLARATION</h2>
+  <p>I hereby declare that the project entitled, <strong>“M.S Fashion: Bespoke Ethnic Menswear Platform”</strong>, has not been in any case duplicated or submitted to any other university or educational institution for the award of any academic degree, diploma, or professional fellowship.</p>
+  <p>To the best of my knowledge and belief, this dissertation represents an authentic, self-developed software engineering project carried out under the supervision of the Department of Computer Science, Rizvi College of Arts, Science and Commerce. The project is done in partial fulfilment of the requirements for the award of the degree of <strong>BACHELOR OF SCIENCE (COMPUTER SCIENCE)</strong> to be evaluated as a Semester V project as part of the University of Mumbai curriculum.</p>
+  <div style="text-align: right; margin-top: 60px;">
+    <p><strong>Aslam Ansari</strong><br>Roll No: 05</p>
+  </div>
+</div>
+
+<!-- PAGE 6: ABSTRACT -->
+<div class="page">
+  <h2 class="chapter-title">ABSTRACT</h2>
+  <p><strong>M.S Fashion: Bespoke Ethnic Menswear Platform</strong> is a full-stack, enterprise-grade web application engineered to bridge the gap between traditional Indian ethnic tailoring craftsmanship and modern digital commerce. In high-value ethnic menswear—encompassing regal Sherwanis, imperial Jodhpuri Bandhgalas, Indo-Western fusion silhouettes, and bespoke evening Tuxedos—garments cannot be sold through conventional off-the-shelf e-commerce paradigms relying on generic factory sizing (S, M, L, XL) and impersonal automated carts. Each bespoke ensemble requires more than 15 precise anatomical measurements, personalized fabric swatch curation, intricate hand-embroidery (such as copper wire Zardozi and Aari needlework), coordinated regal accessories, and dedicated trial fittings.</p>
+  <p>The proposed system models an Online-to-Offline (O2O) digital atelier framework inspired by haute-couture fashion houses such as Manyavar, Sabyasachi, and Savile Row. Built using a reactive MERN-stack architecture (React.js, Tailwind CSS, Node.js, Express.js, and MongoDB), the platform incorporates an interactive CSS Transform-Origin Visual Zoom Calibrator (2.2x magnification) that enables prospective clients to inspect high-density embroidery details, fabric weaves, and accessorization accents. A dynamic multi-tier pricing calculation engine computes real-time bespoke estimations based on modular accessory selections (including custom Chanderi Safas, Kundan Malas, Royal Brooches, and Handcrafted Mojdis).</p>
+  <p>To safeguard the bespoke atelier from spam inquiries and fraudulent appointments, the platform integrates a royal Two-Step Email OTP Verification protocol powered by Gmail SMTP and Nodemailer, alongside a client-defined Expected Budget (Self Budget) input field. Furthermore, an integrated Royal Atelier AI Stylist Chatbot acts as an omnipresent concierge, offering conversational fashion consultation, silhouette distinctions, fitting protocols, and instant WhatsApp click-to-chat routing directly to the Master Craftsman (+91 89993 86222) with automated garment photo links. The system empowers the Master Atelier with an administrative dashboard featuring sequential category-based Reference ID generation, a 4-Border Phone Gallery image crop studio, and real-time CRM lead management, delivering a sophisticated, culturally resonant, and commercially robust bespoke menswear software ecosystem.</p>
+</div>
+
+<!-- CHAPTER 1: INTRODUCTION -->
+<div class="page">
+  <h2 class="chapter-title">CHAPTER 1. INTRODUCTION</h2>
+  <h3 class="section-title">1.1 Introduction</h3>
+  <p>Indian ethnic menswear occupies a majestic and revered standing within the global garment and couture industry. Rooted in centuries of Mughal, Rajputana, and Awadhi royal atelier traditions, garments such as the Sherwani, Jodhpuri Bandhgala, and Achkan symbolize imperial dignity, sartorial prestige, and ancestral craftsmanship. In modern India, the wedding and festive celebration market represents a multi-billion dollar economy where the groom and his entourage demand bespoke garments characterized by rich hand-spun fabrics, natural mulberry silks, heavy imported velvets, and labor-intensive hand-embroideries like antique Zardozi, Pita work, Cutdana, and fine Resham threading.</p>
+  <p>Historically, the creation of such regal garments has relied upon intimate, in-person master tailor (Masterji) consultations. Patrons visit heritage boutiques across traditional textile quarters (such as Mumbai, Delhi, Lucknow, and Jaipur) to inspect fabric swatches, discuss collar profiles, deliberate on button plackets, and undergo multiple rounds of physical trial fittings. In a bespoke atelier, every garment is treated as a unique, individual masterpiece crafted specifically to accommodate the client's singular anatomical proportions, shoulder slope, posture curvature, and stylistic inclinations.</p>
+  <p>However, with rapid contemporary digitization, high-net-worth patrons and modern grooms increasingly demand digital accessibility, pre-consultation visual discovery, transparent itemized pricing breakdowns, and rapid digital communication. Standard off-the-rack mass-market e-commerce platforms (such as Amazon, Flipkart, or generic Shopify storefronts) are fundamentally incapable of fulfilling the nuanced needs of bespoke ethnic couture. In generic shopping cart models, garments are categorized under rigid, standardized factory sizes (Small, Medium, Large, Extra Large). Placing a non-standard ₹60,000 to ₹1,50,000 handmade bridal sherwani into a shopping cart with a generic 'Buy Now' button inevitably results in catastrophic sizing mismatches, customer dissatisfaction, and massive financial loss.</p>
+  <p>To resolve this fundamental industrial dilemma, M.S Fashion: Bespoke Ethnic Menswear Platform has been conceived and engineered. The application embodies an Online-to-Offline (O2O) digital atelier framework modeled after global luxury benchmarks such as Manyavar, Sabyasachi, and London's Savile Row tailoring houses. The platform provides a rich editorial showcase of four flagship menswear categories: Sherwani, Jodhpuri, Indo-Western, and Blazer. Through an interactive CSS Transform-Origin Visual Zoom Calibrator, clients can inspect high-definition embroidery motifs and coordinate matching royal accessories (Safa, Mala, Brooch, Mojdi, and Dupatta) with dynamic real-time quotation updates. Consultation leads are validated via a spam-proof two-step royal Email OTP verification protocol, while an integrated Royal Atelier AI Stylist Chatbot and direct Master Craftsman WhatsApp link bridge digital inquiry with bespoke physical craftsmanship.</p>
+
+  <h3 class="section-title">1.2 Problem Definition</h3>
+  <p>The bespoke ethnic tailoring sector suffers from deep systemic operational inefficiencies stemming from fragmented record-keeping, inaccurate sizing presumptions, and the absence of specialized digital presentation infrastructure. The primary challenges addressed by this project include:</p>
+  <ul>
+    <li><strong>1. Inadequacy of Standard Sizing (S/M/L):</strong> Off-the-shelf garments sold online rely on arbitrary statistical averages that fail to accommodate individual body postures, arm lengths, chest slopes, and neck circumferences. In bridal wear, a single centimeter discrepancy in sleeve length or shoulder seam destroys the garment's visual poise.</li>
+    <li><strong>2. Disconnected Accessory Synchronization:</strong> Bespoke garments are rarely sold in isolation; a Sherwani requires a coordinated Turban (Safa), Pearl Necklace (Mala), Handcrafted Footwear (Mojdi), Antique Brooch, and Silk Stole (Dupatta). Conventional platforms lack interactive accessory configuration with real-time price roll-ups.</li>
+    <li><strong>3. Inability to Inspect High-Density Embroidery Details:</strong> Standard online stores display flat, static product photos without specialized detail viewers. Clients cannot examine the density of Zardozi wirework, the sheen of brocade weaves, or collar embroidery craftsmanship prior to booking an atelier visit.</li>
+    <li><strong>4. Unverified Contact Leads and Appointment Spam:</strong> When boutiques publish inquiry phone numbers online, they are inundated with fraudulent numbers, bot submissions, and casual browsers who submit false appointment dates, overwhelming the master craftsman.</li>
+    <li><strong>5. Gateway Transaction Costs & Milestone Payment Incompatibility:</strong> Payment gateways charge 2% to 3% Merchant Discount Rate (MDR) fees on card checkouts. On a ₹1,00,000 wedding ensemble, an atelier loses ₹3,000 purely to gateway deductions. Furthermore, bespoke couture operates on milestone payments (50% advance token booking + 50% post-fitting balance), making single-click full carts commercially unviable.</li>
+    <li><strong>6. Fragmented In-Shop Record Keeping & CRM Absence:</strong> Handcrafted couture boutiques often lack structured customer relationship systems. Client measurement notes, requested fabric variations, and bespoke appointment schedules are scattered across physical paper diaries and disconnected messaging apps.</li>
+  </ul>
+</div>
+
+<!-- CHAPTER 2: REQUIREMENT SPECIFICATION -->
+<div class="page">
+  <h2 class="chapter-title">CHAPTER 2. REQUIREMENT SPECIFICATION</h2>
+  <h3 class="section-title">2.1 Introduction</h3>
+  <p>In developing the M.S Fashion bespoke platform, rigorous requirements analysis was conducted to establish clear functional boundaries, system performance parameters, hardware prerequisites, and operational constraints. Defining these specifications prevents design ambiguity, ensures architectural traceability, and guarantees that the resulting application satisfies the high-stakes requirements of both discerning couture clients and atelier master tailors.</p>
+
+  <h3 class="section-title">2.2 System Environment</h3>
+  <p>The M.S Fashion platform is engineered as a modern, decoupled three-tier web application architecture consisting of the following runtime layers:</p>
+  <ul>
+    <li><strong>Presentation Layer (Client-Side):</strong> Single Page Application (SPA) constructed in React.js and compiled via Vite. Styled with Tailwind CSS utility classes, utilizing responsive Flexbox and Grid layouts optimized for high-density mobile screens and 4K desktop displays.</li>
+    <li><strong>Application Logic Layer (Server-Side):</strong> Asynchronous RESTful API backend engineered in Node.js utilizing the Express.js framework. Manages API routing, lead validation, file uploads via Multer, email OTP dispatching via Nodemailer, and dynamic catalog persistence.</li>
+    <li><strong>Data Persistence & Service Layer:</strong> Persistent document storage powered by MongoDB (with dynamic JSON fail-safe mechanisms for offline development resilience). External cloud mail transport configured through Google Gmail SMTP services and WhatsApp Click-to-Chat URI protocols.</li>
+  </ul>
+
+  <h3 class="section-title">2.5 Methodology & Spiral Model</h3>
+  <p>The Spiral Model was selected as the optimal SDLC methodology for M.S Fashion because it combines the structured rigor of the Waterfall model with the exploratory prototyping nature of Agile, while prioritizing Risk Analysis at every phase.</p>
+  <div class="figure-box">
+    <img src="report_assets/diagram_spiral_model.png" alt="Spiral Model Diagram">
+    <div class="figure-caption">Figure 2.1: Spiral Model Methodology for M.S Fashion Bespoke Platform</div>
+  </div>
+</div>
+
+<!-- CHAPTER 5: SYSTEM DESIGN -->
+<div class="page">
+  <h2 class="chapter-title">CHAPTER 5. SYSTEM DESIGN</h2>
+  <h3 class="section-title">5.2 System Architecture Diagram</h3>
+  <p>The System Architecture Diagram illustrates the multi-tier topological organization of M.S Fashion across Presentation, Logic, and Persistence layers alongside integrated external cloud APIs.</p>
+  <div class="figure-box">
+    <img src="report_assets/diagram_system_architecture.png" alt="System Architecture Diagram">
+    <div class="figure-caption">Figure 5.1: High-Level System Architecture Diagram of M.S Fashion</div>
+  </div>
+
+  <h3 class="section-title">5.3 Data Flow Diagrams</h3>
+  <p>The movement and transformation of data across client requests, validation pipelines, and persistent stores are modeled across Level 0 and Level 1 DFDs.</p>
+  <div class="figure-box">
+    <img src="report_assets/diagram_dfd_level0.png" alt="DFD Level 0">
+    <div class="figure-caption">Figure 5.2: Level 0 Data Flow Diagram (Context Diagram)</div>
+  </div>
+  <div class="figure-box">
+    <img src="report_assets/diagram_dfd_level1.png" alt="DFD Level 1">
+    <div class="figure-caption">Figure 5.3: Level 1 Data Flow Diagram (Decomposed Modules)</div>
+  </div>
+</div>
+
+<!-- CHAPTER 6: IMPLEMENTATION & TEST CASES -->
+<div class="page">
+  <h2 class="chapter-title">CHAPTER 6. SYSTEM IMPLEMENTATION</h2>
+  <h3 class="section-title">6.2 System Workflow Flowchart</h3>
+  <div class="figure-box">
+    <img src="report_assets/diagram_flowchart.png" alt="System Flowchart">
+    <div class="figure-caption">Figure 6.1: High-Level System Workflow Flowchart</div>
+  </div>
+
+  <h3 class="section-title">6.4.4 Comprehensive Test Cases Table</h3>
+  <table class="test-table">
+    <thead>
+      <tr>
+        <th>Test ID</th>
+        <th>Module / Action</th>
+        <th>Input Test Vector</th>
+        <th>Expected Architectural Result</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>TC-01</td><td>Homepage Navigation</td><td>Client opens website on browser</td><td>Editorial hero banner and floating Royal Stylist badge load cleanly</td><td class="pass-badge">Pass</td></tr>
+      <tr><td>TC-02</td><td>Silhouette Filtering</td><td>Click 'Jodhpuri With Jacket (6)' tab</td><td>Catalog displays exactly 6 matching garments with zero overlap</td><td class="pass-badge">Pass</td></tr>
+      <tr><td>TC-03</td><td>CSS Zoom Activation</td><td>Click 'Kundan & Pearl Mala' accessory</td><td>Viewer zooms to 2.2x magnification on chest; crosshair fades in 2s</td><td class="pass-badge">Pass</td></tr>
+      <tr><td>TC-04</td><td>Dynamic Price Roll-up</td><td>Select Chanderi Safa (+₹1,500) and Mojdi</td><td>Grand Total updates dynamically from base price to ₹20,599</td><td class="pass-badge">Pass</td></tr>
+      <tr><td>TC-05</td><td>Self Budget Ingestion</td><td>Enter '₹50,000' in Expected Budget input</td><td>Freeform value is accepted without enforcing preset tier restrictions</td><td class="pass-badge">Pass</td></tr>
+      <tr><td>TC-06</td><td>10-Digit Phone Check</td><td>Enter 9 digits in phone input field</td><td>System displays '9/10 Digits' counter and blocks submission</td><td class="pass-badge">Pass</td></tr>
+      <tr><td>TC-07</td><td>Email OTP Dispatch</td><td>Enter valid client email in booking modal</td><td>System sends 6-digit code via Gmail SMTP; modal enters Step 2</td><td class="pass-badge">Pass</td></tr>
+      <tr><td>TC-08</td><td>Email OTP Validation</td><td>Enter matching 6-digit code '752084'</td><td>Code verified; appointment lead marked verified: true in database</td><td class="pass-badge">Pass</td></tr>
+      <tr><td>TC-09</td><td>Direct WhatsApp Link</td><td>Click 'Contact via WhatsApp' button</td><td>Opens chat with Master (+91 89993 86222) with pre-filled photo link</td><td class="pass-badge">Pass</td></tr>
+      <tr><td>TC-10</td><td>AI Chatbot Launch</td><td>Click floating crown button on bottom-right</td><td>Luxury chat opens with greeting, online badge, and quick chips</td><td class="pass-badge">Pass</td></tr>
+      <tr><td>TC-11</td><td>AI Groom Wear Advice</td><td>User types 'What should I wear for Sangeet?'</td><td>Chatbot recommends Indo-Western silhouette with 1-click booking</td><td class="pass-badge">Pass</td></tr>
+      <tr><td>TC-12</td><td>Admin Authentication</td><td>Submit master credentials on /admin/login</td><td>JWT issued; redirects to 2x2 Master Admin Dashboard</td><td class="pass-badge">Pass</td></tr>
+      <tr><td>TC-13</td><td>Sequential Ref ID</td><td>Create new garment under Sherwani category</td><td>System evaluates maxRef and auto-assigns sequential 'sherwani-06'</td><td class="pass-badge">Pass</td></tr>
+      <tr><td>TC-14</td><td>Phone Gallery Cropper</td><td>Adjust Top/Bottom/Left/Right trim sliders</td><td>Rule-of-thirds grid reflects trims; canvas uploads cropped PNG</td><td class="pass-badge">Pass</td></tr>
+      <tr><td>TC-15</td><td>Brand Config Update</td><td>Update boutique email and save settings</td><td>PUT /api/admin/brand-config persists to disk; persists on refresh</td><td class="pass-badge">Pass</td></tr>
+      <tr><td>TC-16</td><td>CRM Lead Inspection</td><td>Open 'Inquiries & Appointments' tab in admin</td><td>Displays verified client leads with self-declared budgets & WhatsApp button</td><td class="pass-badge">Pass</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- CHAPTER 7: RESULTS AND SCREENSHOTS -->
+<div class="page">
+  <h2 class="chapter-title">CHAPTER 7. RESULTS AND SCREENSHOTS</h2>
+  <h3 class="section-title">7.2.1 Homepage & Editorial Hero Carousel</h3>
+  <p>Figure 7.1 showcases the primary landing interface of M.S Fashion. The design embodies an editorial luxury aesthetic modeled after royal atelier salons and Manyavar. The hero carousel displays high-definition bridal ensembles with typographic taglines ('The Legacy of Indo-Western'), accompanied by the floating 'Ask Royal Stylist' AI launcher badge in the bottom-right corner.</p>
+  <div class="figure-box">
+    <img src="report_assets/01_homepage.png" alt="Homepage Screenshot">
+    <div class="figure-caption">Figure 7.1: Homepage with Editorial Hero Carousel & Floating Royal Stylist Badge</div>
+  </div>
+
+  <h3 class="section-title">7.2.2 Category Catalog & Dynamic Silhouette Filtering</h3>
+  <p>Figure 7.2 illustrates the category browsing view for Aristocratic Jodhpuri Bandhgala. The interface implements normalized silhouette filtering tabs displaying live count indicators: 'All Silhouettes (10)', 'Jodhpuri With Jacket (6)', and 'Jodhpuri Without Jacket (4)'.</p>
+  <div class="figure-box">
+    <img src="report_assets/02_category_grid.png" alt="Category Grid Screenshot">
+    <div class="figure-caption">Figure 7.2: Category Catalog Interface with Live Silhouette Filter Counts</div>
+  </div>
+</div>
+
+<div class="page">
+  <h3 class="section-title">7.2.3 Product Detail Page & Luxury Ensembles</h3>
+  <p>Figure 7.3 depicts the bespoke product inspection interface for 'The Maharaja Sherwani' (Reference ID: sherwani-01). The right column presents modular 'Bespoke Accessory Elements' (Royal Mojdi +₹1,400, Chanderi Safa +₹1,500, Kundan & Pearl Mala +₹700, and Embroidered Dupatta +₹2,000).</p>
+  <div class="figure-box">
+    <img src="report_assets/03_product_detail.png" alt="Product Detail Overview">
+    <div class="figure-caption">Figure 7.3: Product Detail View with Modular Accessory Selection Interface</div>
+  </div>
+
+  <h3 class="section-title">7.2.4 Interactive CSS Zoom Calibrator Active Mode</h3>
+  <p>Figure 7.4 demonstrates the hardware-accelerated CSS Transform-Origin Zoom viewer in active operation. When the client selects 'Kundan & Pearl Mala', the canvas smoothly magnifies by 2.2x, centering on the intricate chest jewelry with crosshair pin and drag controls.</p>
+  <div class="figure-box">
+    <img src="report_assets/04_zoom_active.png" alt="Zoom Active Screenshot">
+    <div class="figure-caption">Figure 7.4: Hardware-Accelerated 2.2x CSS Zoom Viewer Focused on Royal Accessory</div>
+  </div>
+</div>
+
+<div class="page">
+  <h3 class="section-title">7.2.5 Bespoke Price Breakdown & WhatsApp Consultation</h3>
+  <p>Figure 7.5 illustrates the itemized Price Breakdown Modal and direct atelier consultation drawer. The modal displays a thumbnail of the garment, itemized costing totaling ₹20,599, customer notes ('Is it available ??'), and direct 'Contact via WhatsApp' routing to Master (+91 89993 86222).</p>
+  <div class="figure-box">
+    <img src="report_assets/05_price_breakdown_top.png" alt="Price Modal Top">
+    <div class="figure-caption">Figure 7.5(a): Bespoke Price Breakdown Modal with Itemized Accessory Costing</div>
+  </div>
+  <div class="figure-box">
+    <img src="report_assets/05_price_breakdown_bottom.png" alt="Price Modal Bottom">
+    <div class="figure-caption">Figure 7.5(b): Client Customization Notes & Direct WhatsApp Consultation Action</div>
+  </div>
+</div>
+
+<div class="page">
+  <h3 class="section-title">7.2.6 Private Consultation Booking & Self Budget Input</h3>
+  <p>Figure 7.6 showcases the appointment intake modal. Clients enter their full name (Aslam Ansari), email address, 10-digit validated phone number, preferred date ('This Weekend'), and location ('Vasai'). The 'Expected Budget (Self Budget)' field accepts the client's self-declared budget of ₹15,000.</p>
+  <div class="figure-box">
+    <img src="report_assets/06_appointment_form.png" alt="Appointment Form Screenshot">
+    <div class="figure-caption">Figure 7.6: Private Consultation Booking Form with Freeform Self Budget Input</div>
+  </div>
+
+  <h3 class="section-title">7.2.7 Royal 6-Digit Email OTP Lead Verification</h3>
+  <p>Figure 7.7 depicts Step 2 of the consultation booking flow: the Royal Email OTP Verification dialog. A cryptographically generated 6-digit code (752084) is dispatched via Gmail SMTP, ensuring zero spam leads enter the boutique CRM.</p>
+  <div class="figure-box">
+    <img src="report_assets/07_email_otp.png" alt="Email OTP Verification Screenshot">
+    <div class="figure-caption">Figure 7.7: Two-Step Royal Email OTP Verification Screen (6-Digit Authenticator)</div>
+  </div>
+</div>
+
+<div class="page">
+  <h3 class="section-title">7.2.8 Royal Atelier AI Stylist Chatbot</h3>
+  <p>Figure 7.8 presents the conversational interface of the Royal Atelier AI Stylist Chatbot. Operating in the bottom-right corner, the chatbot greets patrons with royal warmth, suggests quick prompts ('Sherwani Styles', 'Tuxedos & Blazers'), and offers contextual recommendations for wedding celebrations.</p>
+  <div class="figure-box">
+    <img src="report_assets/08_ai_chatbot.png" alt="AI Chatbot Screenshot">
+    <div class="figure-caption">Figure 7.8: Royal Atelier AI Stylist Chatbot Offering Conversational Fashion Guidance</div>
+  </div>
+
+  <h3 class="section-title">7.2.9 Master Admin Dashboard & Inquiries CRM Lead Management</h3>
+  <p>Figure 7.9 demonstrates the authenticated Master Admin Dashboard ('Inquiries & Appointments' tab). The lead submitted by Aslam Ansari is displayed with a 'Verified ✓' email badge, contact phone (+91 8999386222), declared Self Budget (₹15,000), and a 1-click 'WhatsApp' action.</p>
+  <div class="figure-box">
+    <img src="report_assets/09_admin_dashboard.png" alt="Admin CRM Screenshot">
+    <div class="figure-caption">Figure 7.9: Master Admin Dashboard Displaying Authenticated CRM Consultation Leads</div>
+  </div>
+</div>
+
+<!-- CHAPTER 8: CONCLUSION AND FUTURE SCOPE -->
+<div class="page">
+  <h2 class="chapter-title">CHAPTER 8. CONCLUSION AND FUTURE SCOPE</h2>
+  <h3 class="section-title">8.1 Conclusion</h3>
+  <p>The project entitled 'M.S Fashion: Bespoke Ethnic Menswear Platform' was successfully architected, developed, and evaluated in strict adherence to the syllabus and dissertation guidelines of Bachelor of Science in Computer Science Sem V, University of Mumbai. By recognizing that high-value handcrafted ethnic menswear cannot be forced into rigid mass-market e-commerce checkout funnels, the project introduced an Online-to-Offline (O2O) digital atelier framework that respects both artisan traditions and modern client expectations.</p>
+  
+  <h3 class="section-title">8.2 Future Scope and Enhancement</h3>
+  <p>Future iterations can introduce the following ten technological enhancements:</p>
+  <ul>
+    <li>1. WebXR Virtual 3D Mirror & AR Try-On: Integrating WebXR and Three.js for 3D body garment projection.</li>
+    <li>2. Computer Vision Fabric Texture Analysis: Machine learning models for fabric thread density detection.</li>
+    <li>3. Multi-Lingual Regional Voice Concierge: Voice assistant supporting Hindi, Gujarati, Marathi, and Urdu.</li>
+    <li>4. Computerized Photogrammetric Body Scanning: 2D photo extraction of 15+ body measurements.</li>
+    <li>5. Automated Tailoring Workshop ERP Integration: Real-time fabric bolt and embroidery thread inventory management.</li>
+    <li>6. Blockchain Fabric Authenticity & Provenance: Digital certificates guaranteeing Banarasi silk and Zardozi bullion metals.</li>
+    <li>7. Multi-Branch Studio Cloud Synchronization: Centralized cloud database supporting multi-city boutique branches.</li>
+    <li>8. Dedicated Cross-Platform Mobile Application: Native Android and iOS apps using React Native and Expo.</li>
+    <li>9. Official Meta WhatsApp Cloud API Webhooks: Automated bidirectional WhatsApp bot conversations with digital PDF catalogue delivery.</li>
+    <li>10. Predictive Wedding Season CRM Analytics: Predictive models forecasting demand peaks based on regional wedding muhurats.</li>
+  </ul>
+</div>
+
+<!-- CHAPTER 9: REFERENCES -->
+<div class="page">
+  <h2 class="chapter-title">CHAPTER 9. REFERENCES</h2>
+  <p>[1] React Official Documentation – React: A JavaScript library for building user interfaces. https://react.dev/</p>
+  <p>[2] Tailwind CSS Documentation – Rapidly build modern websites without ever leaving your HTML. https://tailwindcss.com/docs</p>
+  <p>[3] Node.js Runtime Documentation – Node.js v20 LTS API reference and asynchronous architecture. https://nodejs.org/docs/</p>
+  <p>[4] Express.js Framework Documentation – Fast, unopinionated, minimalist web framework for Node.js. https://expressjs.com/</p>
+  <p>[5] MongoDB Manual & Architecture Guide – Document-oriented NoSQL database system. https://www.mongodb.com/docs/manual/</p>
+  <p>[6] Mongoose ODM Documentation – Elegant MongoDB object modeling for Node.js. https://mongoosejs.com/docs/</p>
+  <p>[7] Vite Next Generation Frontend Tooling – Development server and Rollup bundler. https://vitejs.dev/guide/</p>
+  <p>[8] Nodemailer Transport Documentation – Easy as cake email sending from Node.js applications. https://nodemailer.com/</p>
+  <p>[9] WhatsApp Business API & Click-to-Chat Reference – Universal WhatsApp URL scheme specifications. https://faq.whatsapp.com/5913398998672934</p>
+  <p>[10] IEEE Xplore – Research on Online-to-Offline (O2O) E-Commerce Models in High-Value Custom Manufacturing, IEEE Computer Society, 2023.</p>
+  <p>[11] University of Mumbai – Guidelines for Project Dissertation for B.Sc. (Computer Science), Board of Studies in Computer Science, 2024-2026.</p>
+</div>
+
+</body>
+</html>
+"""
+    with open("MS_Fashion_Project_Report.html", "w", encoding="utf-8") as f:
+        f.write(html_content)
+    print("HTML Report successfully generated: MS_Fashion_Project_Report.html")
+
+if __name__ == '__main__':
+    generate_html_report()

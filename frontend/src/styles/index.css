@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-maroon: #5C1A21;
+  --color-gold: #A9812F;
+  --color-gold-light: #C5A869;
+  --color-ivory: #FBF6EC;
+  --color-ivory-card: #F4ECE1;
+  --color-charcoal: #2B211D;
+}
+
+/* Custom Luxury Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F4ECE1;
+}
+::-webkit-scrollbar-thumb {
+  background: #C5A869;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A9812F;
+}
+
+/* Typography Enhancements */
+h1, h2, h3, h4, h5, h6, .font-editorial {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  letter-spacing: 0.02em;
+}
+
+body {
+  font-family: 'Jost', sans-serif;
+  color: #2B211D;
+  background-color: #FBF6EC;
+}
+
+/* Gold Gradient Text */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #A9812F 0%, #D4AF37 50%, #8F6B24 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subtle Ethnic Pattern Motif */
+.bg-ethnic-motif {
+  background-color: #FBF6EC;
+  background-image: radial-gradient(#A9812F 0.6px, transparent 0.6px), radial-gradient(#A9812F 0.6px, #FBF6EC 0.6px);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+  background-opacity: 0.04;
+}
+
+/* Smooth Interactive Zoom Container */
+.zoom-canvas-transition {
+  transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+  will-change: transform;
+}
+
+/* Gold Border Accents */
+.border-gold-subtle {
+  border: 1px solid rgba(169, 129, 47, 0.35);
+}
+
+.border-gold-solid {
+  border: 1.5px solid #A9812F;
+}
+
+/* Luxury Button Utilities */
+.btn-royal-maroon {
+  background-color: #5C1A21;
+  color: #FBF6EC;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+.btn-royal-maroon:hover {
+  background-color: #461319;
+  box-shadow: 0 10px 25px -5px rgba(92, 26, 33, 0.3);
+}
+
+.btn-royal-gold {
+  background: linear-gradient(135deg, #A9812F 0%, #C5A869 100%);
+  color: #2B211D;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.btn-royal-gold:hover {
+  background: linear-gradient(135deg, #8F6B24 0%, #A9812F 100%);
+  color: #FBF6EC;
+  box-shadow: 0 10px 25px -5px rgba(169, 129, 47, 0.35);
+}
+
+.btn-outline-gold {
+  background-color: transparent;
+  color: #5C1A21;
+  border: 1px solid #A9812F;
+  transition: all 0.3s ease;
+}
+.btn-outline-gold:hover {
+  background-color: #5C1A21;
+  color: #FBF6EC;
+  border-color: #5C1A21;
+}
+
+/* Sequential Top Announcement Bar Ticker (Enter from Left -> Hold in Center 2s -> Exit to Right) */
+@keyframes sequentialTickerCycle {
+  0% {
+    transform: translateX(-40px);
+    opacity: 0;
+  }
+  12% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  84% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  98% {
+    transform: translateX(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(40px);
+    opacity: 0;
+  }
+}
+
+.animate-sequential-ticker {
+  animation: sequentialTickerCycle 3.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* Infinite Continuous Marquee (Right to Left) */
+@keyframes marqueeScroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marqueeScroll 25s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+

@@ -1,0 +1,30 @@
+{
+  "name": "ms-fashion-backend",
+  "version": "1.0.0",
+  "description": "Bespoke Ethnic Menswear Backend API for M.S Fashion",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "ethnic-wear",
+    "bespoke",
+    "fashion",
+    "manyavar-style"
+  ],
+  "author": "M.S Fashion",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.5",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^10.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

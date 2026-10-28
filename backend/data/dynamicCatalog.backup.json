@@ -1,0 +1,733 @@
+[
+  {
+    "id": "sherwani-1791715600917",
+    "title": "Sherwani ",
+    "category": "Sherwani",
+    "subCategory": "Heritage Velvet Sherwani",
+    "folderPath": "uploads/references/Sherwani",
+    "placeholderLabel": "[Sherwani - Sherwani ]",
+    "imageFileName": "garment-1791715512247.png",
+    "realImageUrl": "/uploads/references/Sherwani/garment-1791715512247.png",
+    "hasRealImage": true,
+    "basePrice": 15000,
+    "tagline": "",
+    "description": "",
+    "fabric": "Pure Handloom Raw Silk & Velvet",
+    "embroidery": "Handcrafted Zardozi, Dabka & Resham",
+    "fit": "Bespoke Regal Tailored Fit",
+    "leadTime": "15 - 20 Working Days",
+    "accessories": [
+      {
+        "name": "Royal Mojdi",
+        "key": "mojdi",
+        "price": 700,
+        "description": "Matching velvet footwear with antique zardozi work",
+        "zoomOrigin": {
+          "x": 51,
+          "y": 92,
+          "scale": 2.3
+        }
+      },
+      {
+        "name": "Kundan & Pearl Mala",
+        "key": "mala",
+        "price": 483,
+        "description": "Layered pearl necklace with kundan centerpiece",
+        "zoomOrigin": {
+          "x": 41,
+          "y": 34,
+          "scale": 2.2
+        }
+      }
+    ]
+  },
+  {
+    "id": "jodhpuri-1791714748449",
+    "title": " Jodhpuri With Jacket",
+    "category": "Jodhpuri",
+    "subCategory": "Jodhpuri-With-Jacket",
+    "folderPath": "uploads/references/Jodhpuri",
+    "placeholderLabel": "[Jodhpuri -  Jodhpuri With Jacket]",
+    "imageFileName": "garment-1791714697955.png",
+    "realImageUrl": "/uploads/references/Sherwani/garment-1791714697955.png",
+    "hasRealImage": true,
+    "basePrice": 5999,
+    "tagline": "",
+    "description": "",
+    "fabric": "Pure Handloom Raw Silk & Velvet",
+    "embroidery": "Handcrafted Zardozi, Dabka & Resham",
+    "fit": "Bespoke Regal Tailored Fit",
+    "leadTime": "15 - 20 Working Days",
+    "accessories": [
+      {
+        "name": "Polo Pant",
+        "key": "custom_1791714788276",
+        "price": 1199,
+        "description": "Handcrafted custom bespoke accessory description",
+        "zoomOrigin": {
+          "x": 64,
+          "y": 64,
+          "scale": 2.4
+        }
+      }
+    ]
+  },
+  {
+    "id": "sherwani-01",
+    "title": "The Maharaja Zardozi Velvet Sherwani",
+    "category": "Sherwani",
+    "subCategory": "Royal Bridal Sherwani",
+    "folderPath": "uploads/references/Sherwani",
+    "placeholderLabel": "[Sherwani photo 1 - Maharaja Zardozi Velvet Sherwani]",
+    "imageFileName": "sherwani-01.jpg",
+    "realImageUrl": "/uploads/references/Sherwani/sherwani-01.jpg",
+    "basePrice": 14999,
+    "tagline": "Deep Maroon Velvet with Antique Gold Zardozi & Resham",
+    "description": "An ode to royal Rajasthani heritage. Handcrafted on rich maroon silk velvet with masterfully etched antique gold dabka, French knot florals, and hand-beaded borders.",
+    "fabric": "Pure Silk Velvet with Organza Lining",
+    "embroidery": "Handcrafted Antique Zardozi, Cutdana & Resham",
+    "fit": "Bespoke Regal Tailored Fit",
+    "leadTime": "20 - 25 Working Days",
+    "accessories": [
+      {
+        "name": "Royal Mojdi",
+        "key": "mojdi",
+        "price": 1400,
+        "description": "Matching velvet mojdi with coordinating antique zardozi work",
+        "zoomOrigin": {
+          "x": 57,
+          "y": 90,
+          "scale": 2.3
+        }
+      },
+      {
+        "name": "Chanderi Safa",
+        "key": "safa",
+        "price": 2000,
+        "description": "Hand-tied royal maroon & gold tissue Chanderi turban",
+        "zoomOrigin": {
+          "x": 55,
+          "y": 8,
+          "scale": 2.3
+        }
+      },
+      {
+        "name": "Kundan & Pearl Mala",
+        "key": "mala",
+        "price": 700,
+        "description": "Layered pearl necklace with kundan centerpiece",
+        "zoomOrigin": {
+          "x": 51,
+          "y": 34,
+          "scale": 2.2
+        }
+      },
+      {
+        "name": "Antique Kalgi Brooch",
+        "key": "brooch",
+        "price": 400,
+        "description": "Vintage antique gold plated brooch with emerald droplet",
+        "zoomOrigin": {
+          "x": 59,
+          "y": 36,
+          "scale": 2.6
+        }
+      },
+      {
+        "name": "Embroidered Dupatta",
+        "key": "dupatta",
+        "price": 2000,
+        "description": "Soft organza stole with scalloped zardozi border work",
+        "zoomOrigin": {
+          "x": 38,
+          "y": 48,
+          "scale": 2.1
+        }
+      }
+    ],
+    "hasRealImage": true
+  },
+  {
+    "id": "sherwani-02",
+    "title": "Anarkali Sherwani ",
+    "category": "Sherwani",
+    "subCategory": "Heritage Velvet Sherwani",
+    "folderPath": "uploads/references/Sherwani",
+    "placeholderLabel": "[Sherwani photo 2 - Nawabi Raw Silk Ivory Sherwani]",
+    "imageFileName": "sherwani-02-1791698161231.png",
+    "basePrice": 19999,
+    "tagline": "Warm Ivory Matka Silk with Kashmiri Tilla Threadwork",
+    "description": "An understated masterpiece of aristocratic finesse. Built from handwoven textured ivory raw silk with tone-on-tone tilla embroidery and subtle gold sequins.",
+    "fabric": "Pure Handloom Raw Silk",
+    "embroidery": "Tone-on-Tone Kashmiri Tilla & Subtle Sequins",
+    "fit": "Bespoke Structured Silhouette",
+    "leadTime": "18 - 22 Working Days",
+    "accessories": [
+      {
+        "name": " Mojdi",
+        "key": "mojdi",
+        "price": 600,
+        "description": "Raw silk matching footwear with tone embroidery",
+        "zoomOrigin": {
+          "x": 40,
+          "y": 86,
+          "scale": 2.2
+        }
+      },
+      {
+        "name": "Safa",
+        "key": "safa",
+        "price": 1000,
+        "description": "Peach-gold dual-tone organza pagri with royal drape",
+        "zoomOrigin": {
+          "x": 46,
+          "y": 14,
+          "scale": 2.3
+        }
+      },
+      {
+        "name": " Mala",
+        "key": "mala",
+        "price": 600,
+        "description": "Green onyx and cultured pearl layered necklace",
+        "zoomOrigin": {
+          "x": 42,
+          "y": 35,
+          "scale": 2.2
+        }
+      },
+      {
+        "name": "Dupatta",
+        "key": "dupatta",
+        "price": 1200,
+        "description": "Heritage georgette stole with hand-cut gotta patti",
+        "zoomOrigin": {
+          "x": 39,
+          "y": 50,
+          "scale": 2.1
+        }
+      }
+    ],
+    "realImageUrl": "/uploads/references/Sherwani/sherwani-02-1791698161231.png",
+    "hasRealImage": true
+  },
+  {
+    "id": "sherwani-03",
+    "title": "Short Sherwani 3 Layered",
+    "category": "Sherwani",
+    "subCategory": "Brocade Classic",
+    "folderPath": "uploads/references/Sherwani",
+    "placeholderLabel": "[Sherwani photo 3 - Banarasi Brocade Royal Sherwani]",
+    "imageFileName": "sherwani-03-1791698938156.png",
+    "basePrice": 20999,
+    "tagline": "Pure Katan Silk Banarasi Weave in Deep Burgundy & Gold",
+    "description": "Woven on traditional Varanasi handlooms with pure zari motifs, tailored with a sharp high-neck silhouette and matching churidar.",
+    "fabric": "Pure Banarasi Katan Silk with Zari",
+    "embroidery": "Hand-loomed Floral Kadwa Weaving",
+    "fit": "Classic Tailored Sherwani Fit",
+    "leadTime": "15 - 20 Working Days",
+    "accessories": [
+      {
+        "name": "Mojdi",
+        "key": "mojdi",
+        "price": 600,
+        "description": "Brocade matching footwear with cushioned sole",
+        "zoomOrigin": {
+          "x": 58,
+          "y": 91,
+          "scale": 2.2
+        }
+      }
+    ],
+    "realImageUrl": "/uploads/references/Sherwani/sherwani-03-1791698938156.png",
+    "hasRealImage": true
+  },
+  {
+    "id": "sherwani-04",
+    "title": "Sherwani 3 Layered",
+    "category": "Sherwani",
+    "subCategory": "Silk Embroidered",
+    "folderPath": "uploads/references/Sherwani",
+    "placeholderLabel": "[Sherwani photo 4 - Mughal Jaal Silk Embroidered Sherwani]",
+    "imageFileName": "sherwani-04-1791699118357.png",
+    "basePrice": 21980,
+    "tagline": "Subtle Sage & Gold All-Over Floral Jaal Embroidery",
+    "description": "An ethereal combination of sage silk base and intricate all-over floral jaal embroidery, perfect for destination weddings and day pheras.",
+    "fabric": "Pure Tussar Silk with Satin Finish",
+    "embroidery": "Intricate All-Over Silk Resham Jaal",
+    "fit": "Structured Slim Bespoke Cut",
+    "leadTime": "20 - 24 Working Days",
+    "accessories": [
+      {
+        "name": "Royal Mojdi",
+        "key": "mojdi",
+        "price": 600,
+        "description": "Hand-embroidered sage silk mojdi",
+        "zoomOrigin": {
+          "x": 39,
+          "y": 88,
+          "scale": 2.2
+        }
+      },
+      {
+        "name": "Kundan & Pearl Mala",
+        "key": "mala",
+        "price": 600,
+        "description": "Layered emerald bead and pearl necklace",
+        "zoomOrigin": {
+          "x": 50,
+          "y": 32,
+          "scale": 2.2
+        }
+      }
+    ],
+    "realImageUrl": "/uploads/references/Sherwani/sherwani-04-1791699118357.png",
+    "hasRealImage": true
+  },
+  {
+    "id": "jodhpuri-01",
+    "title": "Bandhgala Jodhpuri",
+    "category": "Jodhpuri",
+    "subCategory": "Jodhpuri-Without-Jacket",
+    "folderPath": "uploads/references/Jodhpuri-With-Jacket",
+    "placeholderLabel": "[Jodhpuri With Jacket photo 1 - Royal Charcoal Bandhgala]",
+    "imageFileName": "jodhpuri-01-1791699346911.png",
+    "basePrice": 4499,
+    "tagline": "Sculpted Structured Bandhgala with Outer Layering Jacket",
+    "description": "Distinguished formal evening wear featuring a structured closed collar inner suit paired with a majestic open-front bespoke achkan jacket.",
+    "fabric": "Super 140s Italian Wool & Silk Blend",
+    "embroidery": "Subtle Hand-stitched Pick Lapels & Tone Threading",
+    "fit": "Tailored Bandhgala Fit",
+    "leadTime": "14 - 18 Working Days",
+    "accessories": [
+      {
+        "name": "Polo Pant",
+        "key": "brooch",
+        "price": 1199,
+        "description": "",
+        "zoomOrigin": {
+          "x": 63,
+          "y": 62,
+          "scale": 2.6
+        }
+      }
+    ],
+    "realImageUrl": "/uploads/references/Jodhpuri/jodhpuri-01-1791699346911.png",
+    "hasRealImage": true
+  },
+  {
+    "id": "jodhpuri-02",
+    "title": "The Midnight Velvet Embroidered Bandhgala",
+    "category": "Jodhpuri",
+    "subCategory": "Jodhpuri-With-Jacket",
+    "folderPath": "uploads/references/Jodhpuri-With-Jacket",
+    "placeholderLabel": "[Jodhpuri With Jacket photo 2 - Midnight Velvet Embroidered Bandhgala]",
+    "imageFileName": "jodhpuri-02-1787375974435.png",
+    "basePrice": 5999,
+    "tagline": "Midnight Navy Velvet with Subtle Antique Gold Collar Crest",
+    "description": "A sovereign evening piece in rich midnight velvet, lined with cupro silk and detailed with subtle bullion wire crest work.",
+    "fabric": "Micro-velvet with Cupro Bemberg Lining",
+    "embroidery": "Handmade Bullion Wire Crest & Cuff Trims",
+    "fit": "Precision Contoured Fit",
+    "leadTime": "15 - 20 Working Days",
+    "accessories": [
+      {
+        "name": "Antique Chest Brooch",
+        "key": "brooch",
+        "price": 399,
+        "description": "Royal eagle crest brooch with hanging curb chain",
+        "zoomOrigin": {
+          "x": 52,
+          "y": 32,
+          "scale": 2.6
+        }
+      },
+      {
+        "name": "Royal Satin Pant",
+        "key": "custom_1787460335644",
+        "price": 1199,
+        "description": "Same fabric Satin Pant ",
+        "zoomOrigin": {
+          "x": 53,
+          "y": 63,
+          "scale": 2.4
+        }
+      }
+    ],
+    "realImageUrl": "/uploads/references/Jodhpuri/jodhpuri-02-1787375974435.png",
+    "hasRealImage": true
+  },
+  {
+    "id": "jodhpuri-03",
+    "title": "The Classic Ivory Raw Silk Bandhgala Suit",
+    "category": "Jodhpuri",
+    "subCategory": "Jodhpuri-Without-Jacket",
+    "folderPath": "uploads/references/Jodhpuri-Without-Jacket",
+    "placeholderLabel": "[Jodhpuri Without Jacket photo 3 - Classic Ivory Raw Silk Bandhgala]",
+    "imageFileName": "jodhpuri-03-1791699623364.png",
+    "basePrice": 4999,
+    "tagline": "Warm Ivory Handcrafted Bandhgala with Trousers",
+    "description": "Clean, elegant, and timeless. Cut from high-twist raw silk with precision shoulder pads and handmade fabric loops.",
+    "fabric": "Pure Matka Raw Silk",
+    "embroidery": "Fine Saddle Stitching & Minimalist Seams",
+    "fit": "Classic Aristocratic Fit",
+    "leadTime": "12 - 16 Working Days",
+    "accessories": [
+      {
+        "name": "Antique Chest Brooch",
+        "key": "brooch",
+        "price": 399,
+        "description": "Vintage gold monogram lapel pin",
+        "zoomOrigin": {
+          "x": 65,
+          "y": 35,
+          "scale": 2.6
+        }
+      },
+      {
+        "name": "Polo pant",
+        "key": "custom_1791699672808",
+        "price": 1199,
+        "description": "Handcrafted custom bespoke accessory description",
+        "zoomOrigin": {
+          "x": 59,
+          "y": 65,
+          "scale": 2.4
+        }
+      }
+    ],
+    "realImageUrl": "/uploads/references/Jodhpuri/jodhpuri-03-1791699623364.png",
+    "hasRealImage": true
+  },
+  {
+    "id": "jodhpuri-04",
+    "title": "The Heritage Maroon Jacquard Bandhgala",
+    "category": "Jodhpuri",
+    "subCategory": "Jodhpuri-Without-Jacket",
+    "folderPath": "uploads/references/Jodhpuri-Without-Jacket",
+    "placeholderLabel": "[Jodhpuri Without Jacket photo 4 - Heritage Maroon Jacquard Bandhgala]",
+    "imageFileName": "jodhpuri-04-1791699711667.png",
+    "basePrice": 4999,
+    "tagline": "Self-Patterned Maroon Jacquard with Antique Accents",
+    "description": "Rich self-woven jacquard motifs on deep maroon fabric, paired with tapered charcoal trousers for an unforgettable royal appearance.",
+    "fabric": "Jacquard Silk-Wool Blend",
+    "embroidery": "Self Woven Floral Texture",
+    "fit": "Slim Fitted Royal Cut",
+    "leadTime": "14 - 18 Working Days",
+    "accessories": [
+      {
+        "name": "Antique Chest Brooch",
+        "key": "brooch",
+        "price": 399,
+        "description": "Ruby cluster brooch with double chain clasp",
+        "zoomOrigin": {
+          "x": 57,
+          "y": 39,
+          "scale": 2.6
+        }
+      },
+      {
+        "name": "Polo Pant",
+        "key": "custom_1791699747819",
+        "price": 1199,
+        "description": "Handcrafted custom bespoke accessory description",
+        "zoomOrigin": {
+          "x": 58,
+          "y": 62,
+          "scale": 2.4
+        }
+      }
+    ],
+    "realImageUrl": "/uploads/references/Jodhpuri/jodhpuri-04-1791699711667.png",
+    "hasRealImage": true
+  },
+  {
+    "id": "indo-01",
+    "title": "Indo 2 Layered",
+    "category": "Indo-Western",
+    "subCategory": "Indo-Western-Without-Jacket",
+    "folderPath": "uploads/references/Indo-Western-With-Jacket",
+    "placeholderLabel": "[Indo-Western With Jacket photo 1 - Asymmetric Draped Achkan with Jacket]",
+    "imageFileName": "indo-01-1791699818753.png",
+    "basePrice": 16999,
+    "tagline": "Modern Asymmetrical Hemline with Layered Tailored Jacket",
+    "description": "A high-fashion crossover silhouette combining fluid cowl drapery with a sharply structured overlay jacket, creating captivating movement.",
+    "fabric": "Italian Georgette & Crepe with Structured Wool Overlay",
+    "embroidery": "Geometric Zardozi and Threadwork on Lapel & Cuffs",
+    "fit": "Modern Architectural Drape Fit",
+    "leadTime": "15 - 20 Working Days",
+    "accessories": [
+      {
+        "name": "Dupatta",
+        "key": "brooch",
+        "price": 783,
+        "description": "Modern royal aesthetic lapel brooch with subtle chain",
+        "zoomOrigin": {
+          "x": 31,
+          "y": 37,
+          "scale": 2.6
+        }
+      },
+      {
+        "name": "Mojdi",
+        "key": "custom_1791699970124",
+        "price": 699,
+        "description": "Handcrafted custom bespoke accessory description",
+        "zoomOrigin": {
+          "x": 47,
+          "y": 89,
+          "scale": 2.4
+        }
+      }
+    ],
+    "realImageUrl": "/uploads/references/Indo-Western/indo-01-1791699818753.png",
+    "hasRealImage": true
+  },
+  {
+    "id": "indo-02",
+    "title": "Indo With Satin Jacket",
+    "category": "Indo-Western",
+    "subCategory": "Indo-Western-With-Jacket",
+    "folderPath": "uploads/references/Indo-Western-With-Jacket",
+    "placeholderLabel": "[Indo-Western With Jacket photo 2 - Pleated Overlap Fusion Ensemble with Jacket]",
+    "imageFileName": "indo-02-1791700111423.png",
+    "basePrice": 9999,
+    "tagline": "Fluted Pleated Front with Hand-Embroidered Open Overlay",
+    "description": "Hand-crafted micro-pleating paired with an ornate structured jacket in antique gold and rich maroon tones.",
+    "fabric": "Pure Silk Organza & Raw Silk Jacket",
+    "embroidery": "Hand-appliquéd Resham Motifs",
+    "fit": "Sculpted Fusion Silhouette",
+    "leadTime": "16 - 20 Working Days",
+    "accessories": [
+      {
+        "name": "Antique Chest Brooch",
+        "key": "brooch",
+        "price": 399,
+        "description": "Antique gold filigree brooch with pearl droplet",
+        "zoomOrigin": {
+          "x": 62,
+          "y": 35,
+          "scale": 2.6
+        }
+      }
+    ],
+    "realImageUrl": "/uploads/references/Indo-Western/indo-02-1791700111423.png",
+    "hasRealImage": true
+  },
+  {
+    "id": "indo-03",
+    "title": "Indo 3 Layered",
+    "category": "Indo-Western",
+    "subCategory": "Indo-Western-Without-Jacket",
+    "folderPath": "uploads/references/Indo-Western-Without-Jacket",
+    "placeholderLabel": "[Indo-Western Without Jacket photo 3 - Cascading Cowl Kurta & Waistcoat Set]",
+    "imageFileName": "indo-03-1791700200924.png",
+    "basePrice": 11999,
+    "tagline": "Deep Burgundy Cowl Kurta with Tailored Nehru Waistcoat",
+    "description": "Effortless ethnic elegance featuring fluid cowl draping along the chest and hip, topped with an embroidered bandhgala waistcoat.",
+    "fabric": "Fluid Silk Chanderi & Dupion Silk",
+    "embroidery": "Subtle Pinstripe Resham Detailing",
+    "fit": "Fluid Tailored Fit",
+    "leadTime": "10 - 14 Working Days",
+    "accessories": [],
+    "realImageUrl": "/uploads/references/Indo-Western/indo-03-1791700200924.png",
+    "hasRealImage": true
+  },
+  {
+    "id": "indo-04",
+    "title": "Sherwani ",
+    "category": "Sherwani",
+    "subCategory": "Brocade Classic",
+    "folderPath": "uploads/references/Indo-Western-Without-Jacket",
+    "placeholderLabel": "[Indo-Western Without Jacket photo 4 - Monochromatic Charcoal Wrap Ensemble]",
+    "imageFileName": "indo-04-1791700344387.png",
+    "basePrice": 10999,
+    "tagline": "Modern Cross-Over Fastening with Straight Tapered Trousers",
+    "description": "Understated high fashion with cross-wrap fastening, side vents, and clean tailored lines for sangeet and cocktail soirees.",
+    "fabric": "High-Twist Wool Crepe",
+    "embroidery": "Minimalist Tone Stitching",
+    "fit": "Modern Streamlined Cut",
+    "leadTime": "12 - 15 Working Days",
+    "accessories": [
+      {
+        "name": "Antique Chest Brooch",
+        "key": "brooch",
+        "price": 399,
+        "description": "Vintage geometric gunmetal brooch",
+        "zoomOrigin": {
+          "x": 60,
+          "y": 31,
+          "scale": 2.6
+        }
+      }
+    ],
+    "realImageUrl": "/uploads/references/Indo-Western/indo-04-1791700344387.png",
+    "hasRealImage": true
+  },
+  {
+    "id": "coat-01",
+    "title": "Tuxedo With Embroidery",
+    "category": "Blazer",
+    "subCategory": "Blazer-Shawl",
+    "folderPath": "uploads/references/Blazer-Single-Breasted",
+    "placeholderLabel": "[Blazer Single-Breasted photo 1 - Sovereign SB Peak Lapel Suit]",
+    "imageFileName": "coat-01-1791700472242.png",
+    "basePrice": 11999,
+    "tagline": "Savile Row Cut Single-Breasted Suit in Charcoal Glen Check",
+    "description": "Masterfully structured single-breasted two-piece suit with high-gorge peak lapels, full horsehair canvas chest, and horn buttons.",
+    "fabric": "Super 150s Merino Wool (320 gsm)",
+    "embroidery": "Hand-picked AMF Stitching along Lapels & Pockets",
+    "fit": "Bespoke English Tailored Fit",
+    "leadTime": "15 - 20 Working Days",
+    "accessories": [
+      {
+        "name": "Tailored Trousers / Pant",
+        "key": "pant",
+        "price": 1500,
+        "description": "Custom fitted matching formal trousers with waistband adjusters",
+        "zoomOrigin": {
+          "x": 50,
+          "y": 85,
+          "scale": 2.1
+        }
+      }
+    ],
+    "realImageUrl": "/uploads/references/Blazer/coat-01-1791700472242.png",
+    "hasRealImage": true
+  },
+  {
+    "id": "coat-02",
+    "title": "Tuxedo",
+    "category": "Blazer",
+    "subCategory": "Blazer-Shawl",
+    "folderPath": "uploads/references/Blazer-Double-Breasted",
+    "placeholderLabel": "[Blazer Double-Breasted photo 2 - Imperial DB 6x2 Wool Suit]",
+    "imageFileName": "coat-02-1791700694387.png",
+    "basePrice": 11999,
+    "tagline": "Classic 6x2 Double-Breasted Silhouette in Midnight Navy",
+    "description": "Imposing masculine authority. Broad sweeping peak lapels, roped shoulder construction, and a nipped waist tailored for red-carpet distinction.",
+    "fabric": "Super 160s Fine Worsted Wool",
+    "embroidery": "Hand-stitched Pick Lapels & Milanese Buttonhole",
+    "fit": "Power Silhouette Bespoke DB Fit",
+    "leadTime": "16 - 22 Working Days",
+    "accessories": [
+      {
+        "name": "Tailored Trousers / Pant",
+        "key": "pant",
+        "price": 1500,
+        "description": "Precision cut double-pleated matching trousers",
+        "zoomOrigin": {
+          "x": 50,
+          "y": 85,
+          "scale": 2.1
+        }
+      }
+    ],
+    "realImageUrl": "/uploads/references/Blazer/coat-02-1791700694387.png",
+    "hasRealImage": true
+  },
+  {
+    "id": "coat-03",
+    "title": "Blazer With Waistcoat",
+    "category": "Blazer",
+    "subCategory": "Blazer-Single-Breasted",
+    "folderPath": "uploads/references/Blazer-Shawl",
+    "placeholderLabel": "[Blazer Shawl photo 3 - Black-Tie Velvet Shawl Lapel Tuxedo]",
+    "imageFileName": "coat-03-1791700784975.png",
+    "basePrice": 7999,
+    "tagline": "Pure Silk Velvet Dinner Jacket with Satin Shawl Collar",
+    "description": "The definitive black-tie evening statement. Deep wine velvet dinner jacket featuring a fluid curved satin shawl collar and jetted pockets.",
+    "fabric": "Pure Cotton Velvet & Duchess Silk Satin",
+    "embroidery": "Hand-molded Shawl Collar & Silk Covered Buttons",
+    "fit": "Bespoke Evening Dinner Fit",
+    "leadTime": "18 - 22 Working Days",
+    "accessories": [
+      {
+        "name": "Tailored Tuxedo Pant",
+        "key": "pant",
+        "price": 1300,
+        "description": "Matching tuxedo trousers with satin side stripe",
+        "zoomOrigin": {
+          "x": 58,
+          "y": 67,
+          "scale": 2.1
+        }
+      }
+    ],
+    "realImageUrl": "/uploads/references/Blazer/coat-03-1791700784975.png",
+    "hasRealImage": true
+  },
+  {
+    "id": "coat-04",
+    "title": "DB Without Jacket",
+    "category": "Blazer",
+    "subCategory": "Blazer-Double-Breasted",
+    "folderPath": "uploads/references/Blazer-Shawl",
+    "placeholderLabel": "[Blazer Shawl photo 4 - Emerald Green Velvet Shawl Tuxedo]",
+    "imageFileName": "coat-04-1791700909110.png",
+    "basePrice": 4999,
+    "tagline": "Deep Emerald Velvet with Black Grosgrain Shawl Lapel",
+    "description": "An aristocratic evening dinner suit in luminous bottle green velvet paired with midnight trousers featuring a grosgrain side stripe.",
+    "fabric": "English Micro-Velvet & Italian Grosgrain Silk",
+    "embroidery": "Silk Pic-Stitched Edge Trimming",
+    "fit": "Fitted Evening Contour Fit",
+    "leadTime": "18 - 24 Working Days",
+    "accessories": [
+      {
+        "name": "Trouser/Pant",
+        "key": "pant",
+        "price": 1500,
+        "description": "Midnight trousers with grosgrain side stripe",
+        "zoomOrigin": {
+          "x": 44,
+          "y": 65,
+          "scale": 2.1
+        }
+      }
+    ],
+    "realImageUrl": "/uploads/references/Blazer/coat-04-1791700909110.png",
+    "hasRealImage": true
+  },
+  {
+    "id": "indowestern-1791701192983",
+    "title": "Indo With Jacket",
+    "category": "Indo-Western",
+    "subCategory": "Indo-Western-With-Jacket",
+    "folderPath": "uploads/references/Indo-Western",
+    "placeholderLabel": "[Indo-Western - Indo With Jacket]",
+    "imageFileName": "garment-1791701074587.png",
+    "realImageUrl": "/uploads/references/Sherwani/garment-1791701074587.png",
+    "hasRealImage": true,
+    "basePrice": 9999,
+    "tagline": "",
+    "description": "",
+    "fabric": "Pure Handloom Raw Silk & Velvet",
+    "embroidery": "Handcrafted Zardozi, Dabka & Resham",
+    "fit": "Bespoke Regal Tailored Fit",
+    "leadTime": "15 - 20 Working Days",
+    "accessories": [
+      {
+        "name": "Antique Chest Brooch",
+        "key": "brooch",
+        "price": 399,
+        "description": "Modern royal aesthetic lapel brooch with subtle chain",
+        "zoomOrigin": {
+          "x": 63,
+          "y": 34,
+          "scale": 2.6
+        }
+      },
+      {
+        "name": "Polo Pant",
+        "key": "custom_1791701152066",
+        "price": 1500,
+        "description": "Handcrafted custom bespoke accessory description",
+        "zoomOrigin": {
+          "x": 56,
+          "y": 72,
+          "scale": 2.4
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "name": "ms-fashion-v2",
+  "version": "1.0.0",
+  "description": "M.S Fashion - Bespoke Ethnic Menswear E-Commerce Platform",
+  "scripts": {
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "start:backend": "cd backend && npm start",
+    "build:frontend": "cd frontend && npm run build"
+  },
+  "author": "M.S Fashion",
+  "license": "ISC"
+}

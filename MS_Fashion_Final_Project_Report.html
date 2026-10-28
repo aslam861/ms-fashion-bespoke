@@ -1,0 +1,2690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>M.S Fashion: Bespoke Ethnic Menswear Platform - Final Project Report</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 15mm 20mm 20mm;
+    @bottom-center {
+      content: counter(page);
+    }
+  }
+  body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 12pt;
+    line-height: 1.25;
+    color: #000000;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 20px 40px;
+  }
+  .page {
+    position: relative;
+    box-sizing: border-box;
+    min-height: 297mm;
+    padding: 25px 30px;
+    margin-bottom: 30px;
+    border: 1.5px solid #000000;
+    background: #FFFFFF;
+    page-break-after: always;
+  }
+  @media print {
+    body { padding: 0; background: #FFF; }
+    .page {
+      margin: 0;
+      padding: 20px 25px;
+      border: 1.5px solid #000000;
+      page-break-after: always;
+    }
+  }
+  h1.doc-title {
+    color: #000000;
+    text-align: center;
+    font-size: 17pt;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 25px;
+  }
+  h2.chapter-title {
+    color: #000000;
+    text-align: center;
+    font-size: 16pt;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  h3.section-title {
+    color: #000000;
+    font-size: 13pt;
+    font-weight: bold;
+    margin-top: 18px;
+    margin-bottom: 8px;
+  }
+  h4.subsection-title {
+    color: #000000;
+    font-size: 12pt;
+    font-weight: bold;
+    margin-top: 12px;
+    margin-bottom: 6px;
+  }
+  p {
+    text-align: justify;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  ul {
+    margin-top: 4px;
+    margin-bottom: 12px;
+    padding-left: 25px;
+  }
+  li {
+    text-align: justify;
+    margin-bottom: 6px;
+  }
+  .center-text { text-align: center; }
+  .bold { font-weight: bold; }
+  .figure-box {
+    text-align: center;
+    margin: 16px 0;
+  }
+  .figure-box img {
+    max-width: 90%;
+    max-height: 480px;
+    border: 1px solid #777777;
+  }
+  .figure-caption {
+    font-size: 10pt;
+    font-weight: bold;
+    font-style: italic;
+    color: #000000;
+    margin-top: 6px;
+    margin-bottom: 14px;
+    text-align: center;
+  }
+  .code-title {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 11pt;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 6px;
+  }
+  .code-box {
+    background-color: #FAF8F5;
+    border: 1px solid #000000;
+    padding: 10px 12px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 8.5pt;
+    line-height: 1.1;
+    color: #000000;
+    white-space: pre-wrap;
+    word-break: break-word;
+    min-height: 240mm;
+  }
+  table.test-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0 25px 0;
+    font-size: 9pt;
+  }
+  table.test-table th {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 8px 6px;
+    border: 1px solid #000000;
+    text-align: left;
+  }
+  table.test-table td {
+    padding: 6px 6px;
+    border: 1px solid #777777;
+    vertical-align: top;
+    color: #000000;
+  }
+  table.test-table tr:nth-child(even) {
+    background-color: #F8F8F8;
+  }
+  .toc-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 4px 0;
+    font-size: 10.5pt;
+  }
+  .toc-title {
+    background: #FFF;
+    padding-right: 5px;
+    z-index: 1;
+  }
+  .toc-dots {
+    flex: 1;
+    border-bottom: 1px dotted #000000;
+    margin: 0 4px;
+    height: 1em;
+  }
+  .toc-page {
+    background: #FFF;
+    padding-left: 5px;
+    font-weight: bold;
+    z-index: 1;
+  }
+</style>
+</head>
+<body>
+
+<!-- PAGE 1: TITLE PAGE -->
+<div class="page center-text">
+  <div style="height: 25px;"></div>
+  <h1 class="doc-title" style="font-size: 18pt; margin-bottom: 16px;">M.S FASHION: BESPOKE ETHNIC MENSWEAR<br>PLATFORM</h1>
+  <p class="bold" style="font-size: 12pt; margin-bottom: 4px;">A Project Report</p>
+  <p style="font-size: 11pt; margin-bottom: 4px;">Submitted in Partial fulfilment of the</p>
+  <p style="font-size: 11pt; margin-bottom: 8px;">Requirements for the award of the Degree of</p>
+  <p class="bold" style="font-size: 13pt; margin-bottom: 4px;">BACHELOR OF SCIENCE (COMPUTER SCIENCE)</p>
+  <p class="bold" style="font-size: 12pt; margin-bottom: 30px;">SEM V</p>
+
+  <p class="bold" style="font-size: 13pt; margin-bottom: 4px;">By Aslam Ansari</p>
+  <p class="bold" style="font-size: 11pt; margin-bottom: 30px;">Seat No: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Roll No: 05</p>
+
+  <p style="font-size: 11pt; margin-bottom: 2px;">Under the esteemed guidance of</p>
+  <p class="bold" style="font-size: 13pt; margin-bottom: 2px;">Prof. Javed Pathan</p>
+  <p style="font-size: 11pt; margin-bottom: 25px;">Assistant Professor</p>
+
+  <div style="margin: 20px 0;">
+    <img src="report_assets/college_logo_0.png" alt="Rizvi Logo" style="height: 125px;">
+  </div>
+
+  <p class="bold" style="font-size: 11pt; margin-bottom: 2px;">DEPARTMENT OF COMPUTER SCIENCE</p>
+  <p class="bold" style="font-size: 12pt; margin-bottom: 2px;">RIZVI COLLEGE OF ARTS, SCIENCE AND COMMERCE</p>
+  <p style="font-size: 11pt; margin-bottom: 2px;">(Affiliated to University of Mumbai)</p>
+  <p class="bold" style="font-size: 11pt; margin-bottom: 2px;">MUMBAI-400050</p>
+  <p class="bold" style="font-size: 11pt; margin-bottom: 4px;">MAHARASHTRA</p>
+  <p class="bold" style="font-size: 12pt;">2026-2027</p>
+</div>
+
+<!-- PAGE 2: CERTIFICATE -->
+<div class="page">
+  <div class="center-text">
+    <p class="bold" style="font-size: 13pt; margin-bottom: 2px;">RIZVI COLLEGE OF ARTS, SCIENCE AND COMMERCE</p>
+    <p style="font-size: 10.5pt; margin-bottom: 2px;">(Affiliated to University of Mumbai)</p>
+    <p class="bold" style="font-size: 10.5pt; margin-bottom: 6px;">MUMBAI-MAHARASHTRA-400050</p>
+    <p class="bold" style="font-size: 12pt; margin-bottom: 12px;">DEPARTMENT OF COMPUTER SCIENCE</p>
+    <img src="report_assets/college_logo_0.png" alt="Rizvi Logo" style="height: 90px; margin-bottom: 15px;">
+    <h2 class="doc-title" style="font-size: 15pt; margin: 10px 0 25px 0;">CERTIFICATE</h2>
+  </div>
+
+  <p style="font-size: 12pt; line-height: 1.6; margin: 25px 10px;">
+    This is to certify that the project entitled, <strong>“M.S Fashion: Bespoke Ethnic Menswear Platform”</strong>, is bonafide work of 
+    <strong>Aslam Ansari</strong> bearing <strong>Seat No: &nbsp;&nbsp;&nbsp;&nbsp; Roll No: 05</strong> submitted in Partial fulfilment of the requirements for the award of degree of 
+    <strong>BACHELOR OF SCIENCE in COMPUTER SCIENCE SEM V</strong> from University of Mumbai.
+  </p>
+
+  <div style="margin-top: 100px; display: flex; justify-content: space-between; padding: 0 40px;">
+    <div style="font-weight: bold;">Project Guide</div>
+    <div style="font-weight: bold;">HOD</div>
+  </div>
+
+  <div style="margin-top: 70px; text-align: center; font-weight: bold;">
+    External Examiner
+  </div>
+
+  <div style="margin-top: 70px; display: flex; justify-content: space-between; padding: 0 40px; font-size: 11pt;">
+    <span>Date: ______________</span>
+    <span>College Seal</span>
+  </div>
+</div>
+
+<!-- PAGE 3: ACKNOWLEDGEMENT -->
+<div class="page">
+  <h2 class="chapter-title">ACKNOWLEDGEMENT</h2>
+  <p>I would like to extend my sincere appreciation to the Department of Computer Science at Rizvi College of Arts, Science, and Commerce for providing me with the opportunity to undertake and complete this project dissertation. I am deeply grateful to our Principal, <strong>Dr. Anjum Ara Ahmad</strong>, for her exceptional leadership and effective management.</p>
+  <p>I would also like to express my gratitude to the Head of the Department, <strong>Professor Arif Patel</strong>, for his support in terms of providing essential resources and invaluable guidance throughout our course has been instrumental in the completion of this project.</p>
+  <p>I would like to convey my profound thanks to my project guide, <strong>Professor Javed Pathan</strong>. His mentorship and support have played an important role in the success of this project. Lastly, I am deeply thankful to my dear parents for their unwavering support.</p>
+  <div style="text-align: right; margin-top: 60px;">
+    <p><strong>Aslam Ansari</strong><br>Roll No: 05</p>
+  </div>
+</div>
+
+<!-- PAGE 4: PLAGIARISM REPORT -->
+<div class="page">
+  <h2 class="chapter-title">PLAGIARISM REPORT</h2>
+  <p>The plagiarism scan report for the M.S Fashion project documentation shows <strong>0% plagiarism</strong>, indicating that no copied content was detected during the scan. The report records <strong>0% Exact Match</strong> and <strong>0% Partial Match</strong>, meaning that no significant text was found to directly or partially match the sources checked by the plagiarism detection system.</p>
+  <p>The report also shows <strong>100% Unique Content</strong>, demonstrating that the submitted documentation is identified as original. Overall, the result indicates that the project report maintains a high level of originality and does not contain detectable plagiarized content according to the scan.</p>
+  <div class="figure-box" style="margin-top: 40px;">
+    <img src="report_assets/plagiarism_proof_0.png" alt="Plagiarism Certificate" style="max-width: 80%;">
+    <div class="figure-caption">Figure: Plagiarism Scan Report Certificate (0% Plagiarism / 100% Unique Content)</div>
+  </div>
+</div>
+
+<!-- PAGE 5: DECLARATION -->
+<div class="page">
+  <h2 class="chapter-title">DECLARATION</h2>
+  <p>I hereby declare that the project entitled, <strong>“M.S Fashion: Bespoke Ethnic Menswear Platform”</strong>, has not been in any case duplicated to submit to any other university for the award of any degree. To the best of our knowledge other than us, no one has submitted to any other university. The project is done in partial fulfilment of the requirements for the award of degree of <strong>BACHELOR OF SCIENCE (COMPUTER SCIENCE)</strong> to be submitted as semester V project as part of our curriculum.</p>
+  <div style="text-align: right; margin-top: 80px;">
+    <p><strong>Aslam Ansari</strong></p>
+  </div>
+</div>
+
+<!-- PAGE 6: ABSTRACT -->
+<div class="page">
+  <h2 class="chapter-title">ABSTRACT</h2>
+  <p><strong>M.S Fashion: Bespoke Ethnic Menswear Platform</strong> is a technology-driven platform designed to simplify, modernize, and elevate bespoke tailoring consultations for high-end Indian ethnic menswear. Clients seeking wedding and celebration attire—such as royal Sherwanis, aristocratic Jodhpuri Bandhgalas, Indo-Western fusion silhouettes, and bespoke Tuxedos—often face difficulties with generic factory sizing, unorganized communication, and fragmented record-keeping. The proposed system provides a centralized digital atelier platform where users can explore curated collections, inspect intricate hand-embroidery with interactive zoom calibration, configure royal accessories, calculate itemized price estimations, and book verified private fittings.</p>
+  <p>The system incorporates an interactive hardware-accelerated CSS Transform-Origin Visual Zoom Calibrator (2.2x zoom) that allows clients to examine fine Zardozi wirework, brocade textures, and accessory details. To solve high-ticket bridal wear communication challenges, the application integrates an intelligent Royal Atelier AI Stylist Chatbot providing contextual styling advice for wedding events, explaining the 15+ body measurement process, and routing inquiries directly to the Master Craftsman on WhatsApp (+91 89993 86222) with automated garment photo links. A two-step royal Email OTP verification protocol powered by Gmail SMTP safeguards the boutique from appointment spam while enabling a client-defined Expected Budget (Self Budget) entry.</p>
+  <p>By integrating modern web technology, an AI conversational assistant, and centralized master administrative controls, the proposed system makes bespoke ethnic menswear tailoring more organized, accessible, transparent, and proactive, improving the overall couture experience for clients and master tailors alike.</p>
+</div>
+
+<!-- PAGES 7-9: TABLE OF CONTENTS (LASER-STRAIGHT) -->
+<div class="page">
+  <h2 class="chapter-title">TABLE OF CONTENTS</h2>
+  <div class="toc-line bold"><span>CHAPTER 1. INTRODUCTION</span><span class="toc-dots"></span><span>01</span></div>
+  <div class="toc-line" style="padding-left: 20px;"><span>1.1 Introduction</span><span class="toc-dots"></span><span>01</span></div>
+  <div class="toc-line" style="padding-left: 20px;"><span>1.2 Problem Definition</span><span class="toc-dots"></span><span>02</span></div>
+  <div class="toc-line" style="padding-left: 20px;"><span>1.3 Aim</span><span class="toc-dots"></span><span>04</span></div>
+  <div class="toc-line" style="padding-left: 20px;"><span>1.4 Objectives</span><span class="toc-dots"></span><span>05</span></div>
+  <div class="toc-line" style="padding-left: 20px;"><span>1.5 Goal</span><span class="toc-dots"></span><span>05</span></div>
+  <div class="toc-line" style="padding-left: 20px;"><span>1.6 Need of the System</span><span class="toc-dots"></span><span>06</span></div>
+
+  <div class="toc-line bold" style="margin-top: 10px;"><span>CHAPTER 2. REQUIREMENT SPECIFICATION</span><span class="toc-dots"></span><span>07</span></div>
+  <div class="toc-line" style="padding-left: 20px;"><span>2.1 Introduction</span><span class="toc-dots"></span><span>07</span></div>
+  <div class="toc-line" style="padding-left: 20px;"><span>2.2 System Environment</span><span class="toc-dots"></span><span>07</span></div>
+  <div class="toc-line" style="padding-left: 20px;"><span>2.3 Software Requirements</span><span class="toc-dots"></span><span>08</span></div>
+  <div class="toc-line" style="padding-left: 20px;"><span>2.4 Hardware Requirements</span><span class="toc-dots"></span><span>10</span></div>
+  <div class="toc-line" style="padding-left: 20px;"><span>2.5 Methodology</span><span class="toc-dots"></span><span>10</span></div>
+  <div class="toc-line" style="padding-left: 20px;"><span>2.6 Spiral Model</span><span class="toc-dots"></span><span>11</span></div>
+
+  <div class="toc-line bold" style="margin-top: 10px;"><span>CHAPTER 3. SYSTEM ANALYSIS</span><span class="toc-dots"></span><span>15</span></div>
+  <div class="toc-line" style="padding-left: 20px;"><span>3.1 System Analysis</span><span class="toc-dots"></span><span>15</span></div>
+  <div class="toc-line" style="padding-left: 20px;"><span>3.2 Analysis of Existing System</span><span class="toc-dots"></span><span>16</span></div>
+  <div class="toc-line" style="padding-left: 20px;"><span>3.3 Analysis of the Proposed System</span><span class="toc-dots"></span><span>17</span></div>
+
+  <div class="toc-line bold" style="margin-top: 10px;"><span>CHAPTER 4. SURVEY OF TECHNOLOGY</span><span class="toc-dots"></span><span>20</span></div>
+  <div class="toc-line" style="padding-left: 20px;"><span>4.1 React.js</span><span class="toc-dots"></span><span>20</span></div>
+  <div class="toc-line" style="padding-left: 20px;"><span>4.2 Tailwind CSS</span><span class="toc-dots"></span><span>21</span></div>
+  <div class="toc-line" style="padding-left: 20px;"><span>4.3 Node.js</span><span class="toc-dots"></span><span>22</span></div>
+  <div class="toc-line" style="padding-left: 20px;"><span>4.4 Express.js</span><span class="toc-dots"></span><span>23</span></div>
+  <div class="toc-line" style="padding-left: 20px;"><span>4.5 MongoDB</span><span class="toc-dots"></span><span>23</span></div>
+  <div class="toc-line" style="padding-left: 20px;"><span>4.6 Vite</span><span class="toc-dots"></span><span>24</span></div>
+  <div class="toc-line" style="padding-left: 20px;"><span>4.7 Nodemailer</span><span class="toc-dots"></span><span>24</span></div>
+  <div class="toc-line" style="padding-left: 20px;"><span>4.8 Royal Atelier AI Stylist</span><span class="toc-dots"></span><span>25</span></div>
+  <div class="toc-line" style="padding-left: 20px;"><span>4.9 Postman</span><span class="toc-dots"></span><span>25</span></div>
+</div>
+
+<div class="page">
+  <div class="toc-line bold"><span>CHAPTER 5. SYSTEM DESIGN</span><span class="toc-dots"></span><span>26</span></div>
+  <div class="toc-line" style="padding-left: 20px;"><span>5.1 Introduction</span><span class="toc-dots"></span><span>26</span></div>
+  <div class="toc-line" style="padding-left: 20px;"><span>5.2 System Architecture Diagram</span><span class="toc-dots"></span><span>26</span></div>
+  <div class="toc-line" style="padding-left: 20px;"><span>5.3 Data Flow Diagram</span><span class="toc-dots"></span><span>28</span></div>
+  <div class="toc-line" style="padding-left: 40px;"><span>5.3.1 Level 0 DFD</span><span class="toc-dots"></span><span>28</span></div>
+  <div class="toc-line" style="padding-left: 40px;"><span>5.3.2 Level 1 DFD</span><span class="toc-dots"></span><span>29</span></div>
+  <div class="toc-line" style="padding-left: 20px;"><span>5.4 Activity Diagram</span><span class="toc-dots"></span><span>31</span></div>
+  <div class="toc-line" style="padding-left: 20px;"><span>5.5 E-R Diagram</span><span class="toc-dots"></span><span>32</span></div>
+  <div class="toc-line" style="padding-left: 20px;"><span>5.6 Use-Case Diagram</span><span class="toc-dots"></span><span>33</span></div>
+
+  <div class="toc-line bold" style="margin-top: 10px;"><span>CHAPTER 6. SYSTEM IMPLEMENTATION</span><span class="toc-dots"></span><span>35</span></div>
+  <div class="toc-line" style="padding-left: 20px;"><span>6.1 Introduction</span><span class="toc-dots"></span><span>35</span></div>
+  <div class="toc-line" style="padding-left: 20px;"><span>6.2 Flowchart</span><span class="toc-dots"></span><span>35</span></div>
+  <div class="toc-line" style="padding-left: 20px;"><span>6.3 Coding</span><span class="toc-dots"></span><span>37</span></div>
+  <div class="toc-line" style="padding-left: 40px;"><span>6.3.1 Frontend</span><span class="toc-dots"></span><span>38</span></div>
+  <div class="toc-line" style="padding-left: 40px;"><span>6.3.2 Backend</span><span class="toc-dots"></span><span>68</span></div>
+  <div class="toc-line" style="padding-left: 20px;"><span>6.4 Testing Approaches</span><span class="toc-dots"></span><span>85</span></div>
+  <div class="toc-line" style="padding-left: 40px;"><span>6.4.1 Unit Testing</span><span class="toc-dots"></span><span>85</span></div>
+  <div class="toc-line" style="padding-left: 40px;"><span>6.4.2 Usability Testing</span><span class="toc-dots"></span><span>85</span></div>
+  <div class="toc-line" style="padding-left: 40px;"><span>6.4.3 Security Testing</span><span class="toc-dots"></span><span>85</span></div>
+  <div class="toc-line" style="padding-left: 40px;"><span>6.4.4 Test Cases</span><span class="toc-dots"></span><span>86</span></div>
+
+  <div class="toc-line bold" style="margin-top: 10px;"><span>CHAPTER 7. RESULTS</span><span class="toc-dots"></span><span>88</span></div>
+  <div class="toc-line" style="padding-left: 20px;"><span>7.1 Introduction</span><span class="toc-dots"></span><span>88</span></div>
+  <div class="toc-line" style="padding-left: 20px;"><span>7.2 Results</span><span class="toc-dots"></span><span>89</span></div>
+  <div class="toc-line" style="padding-left: 40px;"><span>7.2.1 Home & Navigation</span><span class="toc-dots"></span><span>89</span></div>
+  <div class="toc-line" style="padding-left: 40px;"><span>7.2.2 Category Catalog</span><span class="toc-dots"></span><span>90</span></div>
+  <div class="toc-line" style="padding-left: 40px;"><span>7.2.3 Product Detail & Accessories</span><span class="toc-dots"></span><span>91</span></div>
+  <div class="toc-line" style="padding-left: 40px;"><span>7.2.4 CSS Zoom Viewer</span><span class="toc-dots"></span><span>92</span></div>
+  <div class="toc-line" style="padding-left: 40px;"><span>7.2.5 Price Breakdown & WhatsApp</span><span class="toc-dots"></span><span>93</span></div>
+  <div class="toc-line" style="padding-left: 40px;"><span>7.2.6 Appointment Booking</span><span class="toc-dots"></span><span>94</span></div>
+  <div class="toc-line" style="padding-left: 40px;"><span>7.2.7 Email OTP Verification</span><span class="toc-dots"></span><span>95</span></div>
+  <div class="toc-line" style="padding-left: 40px;"><span>7.2.8 Royal AI Stylist Chatbot</span><span class="toc-dots"></span><span>96</span></div>
+  <div class="toc-line" style="padding-left: 40px;"><span>7.2.9 Master Admin Dashboard</span><span class="toc-dots"></span><span>97</span></div>
+  <div class="toc-line" style="padding-left: 20px;"><span>7.3 Overall Result</span><span class="toc-dots"></span><span>98</span></div>
+
+  <div class="toc-line bold" style="margin-top: 10px;"><span>CHAPTER 8. CONCLUSION AND FUTURE SCOPE</span><span class="toc-dots"></span><span>99</span></div>
+  <div class="toc-line" style="padding-left: 20px;"><span>8.1 Conclusion</span><span class="toc-dots"></span><span>99</span></div>
+  <div class="toc-line" style="padding-left: 20px;"><span>8.2 Future Scope and Enhancement</span><span class="toc-dots"></span><span>99</span></div>
+
+  <div class="toc-line bold" style="margin-top: 10px;"><span>CHAPTER 9. REFERENCE</span><span class="toc-dots"></span><span>102</span></div>
+</div>
+
+<!-- CODE MODULES INCLUDED IN CHAPTER 6 -->
+
+<div class="page">
+  <div class="code-title">AtelierChatbot.jsx</div>
+  <div class="code-box">import React, { useState, useRef, useEffect } from 'react';
+import { 
+  MessageSquare, X, Send, Sparkles, User, Crown, 
+  ExternalLink, Calendar, Phone, RefreshCw, ChevronDown 
+} from 'lucide-react';
+import { useConfig } from '../context/ConfigContext';
+import { useNavigate } from 'react-router-dom';
+
+export default function AtelierChatbot() {
+  const { brandConfig, setAppointmentModalOpen, getWhatsAppLink } = useConfig();
+  const navigate = useNavigate();
+  const [isOpen, setIsOpen] = useState(false);
+  const [inputMessage, setInputMessage] = useState('');
+  const [isTyping, setIsTyping] = useState(false);
+  const messagesEndRef = useRef(null);
+
+  // Initial greeting
+  const [messages, setMessages] = useState([
+    {
+      id: 1,
+      sender: 'bot',
+      text: "Namaste! Welcome to M.S Fashion Bespoke Atelier. 👑\nI am your Royal Styling &amp; Tailoring Assistant. How may I assist you with your wedding or bespoke festive ensemble today?",
+      time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
+      options: [
+        { label: "👑 Sherwani vs Indo-Western", query: "What is the difference between Sherwani and Indo-Western?" },
+        { label: "📏 How do fittings work?", query: "How does the custom measurement and trial fitting process work?" },
+        { label: "💰 Pricing &amp; Payment terms", query: "What are the price ranges and payment terms?" },
+        { label: "📅 Book Atelier Appointment", action: "open_appointment" },
+        { label: "💬 Chat with Master", action: "open_whatsapp" }
+      ]
+    }
+  ]);
+
+  // Quick prompt chips
+  const quickChips = [
+    { label: "👑 Sherwani Styles", query: "Tell me about your Sherwani collections" },
+    { label: "🤵 Tuxedos &amp; Blazers", query: "What Blazer and Tuxedo styles do you offer?" },
+    { label: "📏 Measurements", query: "How do custom measurements work?" },</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">AtelierChatbot.jsx</div>
+  <div class="code-box">    { label: "💎 Royal Accessories", query: "Which accessories are included with Sherwanis?" },
+    { label: "⏱️ Delivery Time", query: "How much time does bespoke tailoring take?" },
+    { label: "📍 Atelier Location", query: "Where is M.S Fashion studio located?" }
+  ];
+
+  // Auto-scroll to latest message
+  useEffect(() =&gt; {
+    if (isOpen) {
+      messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [messages, isTyping, isOpen]);
+
+  // Intelligent Human-Friendly Knowledge Engine
+  const generateAtelierResponse = (query) =&gt; {
+    const q = (query || '').toLowerCase().trim();
+
+    // 1. Greetings
+    if (q.match(/^(hi|hello|hey|namaste|salaam|salam|good\s*(morning|evening|afternoon)|hola)/)) {
+      return {
+        text: "Namaste and warm greetings! 🙏\nIt is our honor to welcome you to M.S Fashion. Whether you are planning a grand wedding ensemble, a royal Bandhgala for a reception, or bespoke blazers, I am here to guide you through fabrics, cuts, and custom measurements.\n\nWhat special celebration are you preparing for?",
+        options: [
+          { label: "👑 Groom Wedding Wear", query: "I am looking for groom wedding wear" },
+          { label: "🤵 Reception &amp; Sangeet", query: "What should I wear for reception or sangeet?" },
+          { label: "📅 Book a Private Appointment", action: "open_appointment" }
+        ]
+      };
+    }
+
+    // 2. Groom &amp; Wedding Ensembles (Dulha / Shaadi / Reception / Sangeet)
+    if (q.includes('groom') || q.includes('dulha') || q.includes('wedding') || q.includes('shaadi') || q.includes('marriage') || q.includes('reception') || q.includes('sangeet')) {
+      return {
+        text: "Congratulations on the upcoming celebration! 🎊 For Indian weddings, our atelier curates a signature royal wardrobe:\n\n• *Main Wedding (Pheras):* Hand-embroidered Royal Bridal Sherwani in Raw Silk or Velvet with matching Zardozi Safa, Pearl Mala, and Embroidered Mojdi.\n• *Sangeet / Mehendi:* Modern Indo-Western silhouette with asymmetrical flare, cowl draping, or mirror-work accents.\n• *Cocktail / Reception:* Classic Imperial Jodhpuri Bandhgala or a bespoke Double-Breasted Velvet Tuxedo.\n\nEvery piece is hand-tailored from scratch to your exact posture and preference.",
+        options: [
+          { label: "Explore Sherwanis", action: "nav_sherwani" },
+          { label: "Explore Indo-Western", action: "nav_indowestern" },
+          { label: "Book Fitting Consultation", action: "open_appointment" }
+        ]
+      };</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">AtelierChatbot.jsx</div>
+  <div class="code-box">    }
+
+    // 3. Sherwani Collections
+    if (q.includes('sherwani') || q.includes('achkan')) {
+      return {
+        text: "Our Royal Sherwani Line is handcrafted for timeless grandeur:\n\n1. *Royal Bridal Sherwani:* Heavy antique gold Zardozi hand-embroidery on pure silk.\n2. *Heritage Velvet Sherwani:* Deep wine and midnight navy imperial velvet with intricate bullion work.\n3. *Brocade Classic:* Rich handwoven Banarasi and Jamawar weaves with subtle metallic sheen.\n4. *Silk Embroidered:* Lightweight elegance for modern daytime weddings.\n\n*Included Accessories Available:* Custom Turban (Safa), Pearl Multi-strand Mala, Royal Brooch, Embroidered Mojdi, and Organza Dupatta.",
+        options: [
+          { label: "View Sherwani Collection ➔", action: "nav_sherwani" },
+          { label: "Inquire via WhatsApp", action: "open_whatsapp" }
+        ]
+      };
+    }
+
+    // 4. Jodhpuri / Bandhgala
+    if (q.includes('jodhpuri') || q.includes('bandhgala') || q.includes('bandgala')) {
+      return {
+        text: "The Jodhpuri Bandhgala is the pinnacle of Indian aristocratic tailoring 👑\n\n• *Silhouette:* Structured high Mandarin collar, padded shoulders, and contoured waistline.\n• *Variations:* Single-jacket classic or 2-piece ensembles with contrasting inner kurtas and regal brooches.\n• *Fabrics:* Italian micro-velvet, fine worsted wool blends, and raw mulberry silk.\n• Perfect for wedding receptions, royal ceremonies, and high-profile evening celebrations.",
+        options: [
+          { label: "View Jodhpuri Designs ➔", action: "nav_jodhpuri" },
+          { label: "Book Studio Fitting", action: "open_appointment" }
+        ]
+      };
+    }
+
+    // 5. Indo-Western
+    if (q.includes('indo-western') || q.includes('indo western') || q.includes('fusion') || q.includes('cowl')) {
+      return {
+        text: "Our Indo-Western ensembles bridge traditional royal craftsmanship with contemporary runway aesthetics ✨\n\n• Features asymmetrical front plackets, overlapping angled hemlines, and fluid drape dhotis or trousers.\n• Ideal for Sangeet nights, ring ceremonies, and celebratory parties where effortless movement is key.",
+        options: [
+          { label: "View Indo-Western Ensembles ➔", action: "nav_indowestern" },
+          { label: "Talk to Master", action: "open_whatsapp" }
+        ]
+      };
+    }
+
+    // 6. Blazers &amp; Tuxedos
+    if (q.includes('blazer') || q.includes('coat') || q.includes('suit') || q.includes('tuxedo') || q.includes('tux')) {
+      return {</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">AtelierChatbot.jsx</div>
+  <div class="code-box">        text: "M.S Fashion crafts bespoke evening wear and party blazers with Savile Row precision:\n\n• *Shawl Lapel Tuxedo:* Satin-faced curved shawl lapels in rich jewel tones.\n• *Double-Breasted (DB):* 6-button classic silhouette with peak lapels.\n• *Single-Breasted (SB):* Contemporary 2-button slim fit with tailored matching trousers.",
+        options: [
+          { label: "View Blazer Collection ➔", action: "nav_blazer" },
+          { label: "Book Studio Fitting", action: "open_appointment" }
+        ]
+      };
+    }
+
+    // 7. Measurements, Fittings &amp; Sizing (Crucial Viva / User point)
+    if (q.includes('measurement') || q.includes('size') || q.includes('fit') || q.includes('trial') || q.includes('basting') || q.includes('custom fit')) {
+      return {
+        text: "Because M.S Fashion is a pure Bespoke Atelier, we never use standard factory sizes (S/M/L) 📏\n\n*Our 3-Step Master Fitting Process:*\n1. *15+ Body Point Mapping:* Chest, shoulder slope, bicep circumference, posture curvature, torso length, and waist.\n2. *Basting Trial:* A rough-cut trial fitting to ensure the canvas aligns naturally to your body shape.\n3. *Final Finishing:* Hand-pressed finish with custom monogramming and guaranteed zero puckering.",
+        options: [
+          { label: "Book a Fitting Session", action: "open_appointment" },
+          { label: "Send Measurements on WhatsApp", action: "open_whatsapp" }
+        ]
+      };
+    }
+
+    // 8. Pricing &amp; Payment Policy (Explaining the Bespoke Model)
+    if (q.includes('price') || q.includes('cost') || q.includes('payment') || q.includes('online pay') || q.includes('budget') || q.includes('rate') || q.includes('advance')) {
+      return {
+        text: "At M.S Fashion, all garments are handcrafted made-to-order:\n\n• *Bespoke Bandhgalas &amp; Blazers:* Typically start from ₹25,000 to ₹50,000.\n• *Royal Groom Sherwanis:* Range between ₹45,000 and ₹1,50,000+ depending on hand-embroidery density (Aari vs Pure Zardozi) and silk grade.\n\n*Why no generic online payment gateway?*\nFollowing luxury couture standards (like Sabyasachi &amp; Savile Row), bespoke orders require in-person fabric approval and trial fittings. We operate on milestone booking (token advance + final delivery payment) rather than a mass-market e-commerce cart.",
+        options: [
+          { label: "Enter Self Budget in Booking", action: "open_appointment" },
+          { label: "Get Instant Estimate on WhatsApp", action: "open_whatsapp" }
+        ]
+      };
+    }
+
+    // 9. Delivery Time / Lead Time
+    if (q.includes('time') || q.includes('days') || q.includes('delivery') || q.includes('urgent') || q.includes('fast') || q.includes('when')) {
+      return {
+        text: "⏳ *Craftsmanship Timeline:*\n\n• *Standard Bespoke Ensembles:* 10 to 18 business days (includes fabric procurement, hand-embroidery, cutting, and trial fitting).\n• *Urgent / Express Wedding Orders:* Can be expedited within 5 to 7 days upon consultation with our Master Tailor.\n\nWe recommend booking your consultation at least 3 to 4 weeks prior to your main wedding date.",
+        options: [
+          { label: "Check Urgent Slot on WhatsApp", action: "open_whatsapp" },
+          { label: "Book Studio Appointment", action: "open_appointment" }
+        ]</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">AtelierChatbot.jsx</div>
+  <div class="code-box">      };
+    }
+
+    // 10. Accessories Included
+    if (q.includes('accessory') || q.includes('accessories') || q.includes('safa') || q.includes('pagdi') || q.includes('mala') || q.includes('mojdi') || q.includes('brooch') || q.includes('dupatta')) {
+      return {
+        text: "👑 Every royal ensemble can be paired with matching bespoke accessories:\n\n• *Safa / Pagdi:* Custom-draped silk or velvet turban with kalgi ornament.\n• *Mala:* Multi-layer freshwater pearl necklace with semi-precious stone pendants.\n• *Royal Brooch:* Handcrafted antique brass/gold chest brooch.\n• *Embroidered Mojdi:* Handmade leather mojdis matched to the sherwani embroidery.\n• *Organza Stole / Dupatta:* Hand-rolled zardozi border stole.\n\nYou can select these dynamically on any product page to see the exact price breakdown!",
+        options: [
+          { label: "Browse Ethnic Collection", action: "nav_ethnic" },
+          { label: "Consult Stylist on WhatsApp", action: "open_whatsapp" }
+        ]
+      };
+    }
+
+    // 11. Location &amp; Atelier Visit
+    if (q.includes('location') || q.includes('address') || q.includes('where') || q.includes('shop') || q.includes('store') || q.includes('mumbai') || q.includes('visit') || q.includes('hours')) {
+      return {
+        text: `📍 *M.S Fashion Atelier &amp; Studio:*\n${brandConfig.boutiqueAddress || 'Ground Floor, 10/A, Sanaullah Compound, Near Sauda Bakery, Dharavi Main Road, Mahim (East), Mumbai - 400017'}\n\n🕒 *Visiting Hours:* ${brandConfig.visitingHours || 'Mon - Sat: 1:00 PM - 7:00 PM'}\n📞 *Direct Atelier Line:* ${brandConfig.displayPhone || '+91 89993 86222'}\n\nWalk-ins are welcome, but we recommend booking an appointment for a dedicated Master consultation.`,
+        options: [
+          { label: "📅 Book Atelier Visit", action: "open_appointment" },
+          { label: "Open in Google Maps", action: "open_maps" }
+        ]
+      };
+    }
+
+    // 12. Default Fallback
+    return {
+      text: "That is a wonderful bespoke preference! 👑\nBecause every M.S Fashion ensemble is customized to your exact fabric, embroidery, and measurement preferences, our Master Craftsman can advise you directly with physical fabric swatches and customized quotations.\n\nWould you like to connect directly on WhatsApp or book a private atelier fitting session?",
+      options: [
+        { label: "💬 Connect on WhatsApp", action: "open_whatsapp" },
+        { label: "📅 Book Private Appointment", action: "open_appointment" },
+        { label: "Explore Catalog Collections", action: "nav_ethnic" }
+      ]
+    };
+  };
+
+  // Handle User Message Submission
+  const handleSendMessage = (textToSend) =&gt; {</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">AtelierChatbot.jsx</div>
+  <div class="code-box">    const query = textToSend || inputMessage;
+    if (!query.trim()) return;
+
+    const userMsg = {
+      id: Date.now(),
+      sender: 'user',
+      text: query.trim(),
+      time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+    };
+
+    setMessages((prev) =&gt; [...prev, userMsg]);
+    setInputMessage('');
+    setIsTyping(true);
+
+    // Simulate natural human response delay (500ms - 800ms)
+    setTimeout(() =&gt; {
+      const botResponse = generateAtelierResponse(query);
+      const botMsg = {
+        id: Date.now() + 1,
+        sender: 'bot',
+        text: botResponse.text,
+        time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
+        options: botResponse.options
+      };
+      setMessages((prev) =&gt; [...prev, botMsg]);
+      setIsTyping(false);
+    }, 650);
+  };
+
+  // Handle Interactive Action Buttons
+  const handleActionClick = (opt) =&gt; {
+    if (opt.query) {
+      handleSendMessage(opt.query);
+      return;
+    }
+
+    if (opt.action === 'open_appointment') {
+      setAppointmentModalOpen(true);</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">AtelierChatbot.jsx</div>
+  <div class="code-box">      return;
+    }
+
+    if (opt.action === 'open_whatsapp') {
+      const waUrl = getWhatsAppLink("Hello M.S Fashion Master, I am inquiring about custom wedding/festive tailoring through your website chatbot.");
+      window.open(waUrl, '_blank', 'noopener,noreferrer');
+      return;
+    }
+
+    if (opt.action === 'open_maps') {
+      window.open(brandConfig.googleMapsUrl || "https://maps.google.com", '_blank');
+      return;
+    }
+
+    if (opt.action === 'nav_sherwani') {
+      navigate('/category/sherwani');
+      setIsOpen(false);
+      return;
+    }
+
+    if (opt.action === 'nav_jodhpuri') {
+      navigate('/category/jodhpuri');
+      setIsOpen(false);
+      return;
+    }
+
+    if (opt.action === 'nav_indowestern') {
+      navigate('/category/indo-western');
+      setIsOpen(false);
+      return;
+    }
+
+    if (opt.action === 'nav_blazer') {
+      navigate('/category/blazer');
+      setIsOpen(false);
+      return;
+    }
+</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">AtelierChatbot.jsx</div>
+  <div class="code-box">    if (opt.action === 'nav_ethnic') {
+      navigate('/ethnic-wear');
+      setIsOpen(false);
+      return;
+    }
+  };
+
+  // Reset / Clear Chat
+  const handleResetChat = () =&gt; {
+    setMessages([
+      {
+        id: Date.now(),
+        sender: 'bot',
+        text: "Chat refreshed. How can I assist you with your bespoke royal tailoring today?",
+        time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
+        options: [
+          { label: "👑 Sherwani vs Indo-Western", query: "What is the difference between Sherwani and Indo-Western?" },
+          { label: "📏 How do fittings work?", query: "How does the custom measurement and trial fitting process work?" },
+          { label: "💰 Pricing &amp; Payment terms", query: "What are the price ranges and payment terms?" },
+          { label: "📅 Book Atelier Appointment", action: "open_appointment" }
+        ]
+      }
+    ]);
+  };
+
+  return (
+    &lt;&gt;
+      {/* ==================== FLOATING CIRCULAR LAUNCHER (MANYAVAR STYLE) ==================== */}
+      &lt;div className="fixed bottom-6 right-6 z-40 flex items-center gap-3"&gt;
+        {/* Tooltip / Attention Badge (Shown when chat is closed) */}
+        {!isOpen &amp;&amp; (
+          &lt;div 
+            onClick={() =&gt; setIsOpen(true)}
+            className="hidden sm:flex items-center gap-2 bg-[#FBF6EC] text-[#5C1A21] px-3.5 py-2 rounded-full border border-[#A9812F]/40 shadow-xl cursor-pointer hover:bg-white transition-all transform hover:scale-105"
+          &gt;
+            &lt;Sparkles className="w-4 h-4 text-[#A9812F]" /&gt;
+            &lt;span className="text-xs font-semibold tracking-wide"&gt;Ask Royal Stylist&lt;/span&gt;
+          &lt;/div&gt;</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">AtelierChatbot.jsx</div>
+  <div class="code-box">        )}
+
+        {/* Circular Floating Button */}
+        &lt;button
+          onClick={() =&gt; setIsOpen(!isOpen)}
+          aria-label="Open Atelier Stylist Chatbot"
+          className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-gradient-to-tr from-[#5C1A21] via-[#7A232C] to-[#5C1A21] text-[#FBF6EC] border-2 border-[#A9812F] shadow-2xl flex items-center justify-center cursor-pointer transition-transform duration-300 hover:scale-110 active:scale-95 group focus:outline-none"
+        &gt;
+          {isOpen ? (
+            &lt;X className="w-6 h-6 sm:w-7 sm:h-7 text-[#FBF6EC] transition-transform group-hover:rotate-90" /&gt;
+          ) : (
+            &lt;div className="relative flex items-center justify-center"&gt;
+              &lt;Crown className="w-7 h-7 sm:w-8 sm:h-8 text-[#C5A869]" /&gt;
+              &lt;span className="absolute -top-1 -right-1 w-3.5 h-3.5 bg-emerald-500 border-2 border-[#5C1A21] rounded-full" /&gt;
+            &lt;/div&gt;
+          )}
+        &lt;/button&gt;
+      &lt;/div&gt;
+
+      {/* ==================== EXPANDABLE LUXURY CHAT WINDOW ==================== */}
+      {isOpen &amp;&amp; (
+        &lt;div className="fixed bottom-24 right-4 sm:right-6 z-50 w-[92vw] sm:w-[400px] md:w-[420px] h-[550px] max-h-[80vh] bg-[#FBF6EC] rounded-2xl border border-[#A9812F]/50 shadow-2xl flex flex-col overflow-hidden animate-fadeIn"&gt;
+          
+          {/* Royal Header */}
+          &lt;div className="bg-gradient-to-r from-[#5C1A21] via-[#6E1F27] to-[#5C1A21] text-[#FBF6EC] p-3.5 sm:p-4 border-b border-[#A9812F]/40 flex items-center justify-between shrink-0 shadow-md"&gt;
+            &lt;div className="flex items-center gap-3"&gt;
+              &lt;div className="w-10 h-10 rounded-full bg-[#3D1016] border border-[#A9812F] flex items-center justify-center shrink-0"&gt;
+                &lt;Crown className="w-5 h-5 text-[#C5A869]" /&gt;
+              &lt;/div&gt;
+              &lt;div&gt;
+                &lt;div className="flex items-center gap-2"&gt;
+                  &lt;h3 className="font-serif font-bold text-base sm:text-lg tracking-wide text-[#FBF6EC] leading-tight"&gt;
+                    M.S Fashion Stylist
+                  &lt;/h3&gt;
+                  &lt;span className="text-[9px] uppercase px-1.5 py-0.5 rounded-full bg-[#A9812F]/20 text-[#C5A869] border border-[#A9812F]/40 font-medium"&gt;
+                    AI Atelier
+                  &lt;/span&gt;
+                &lt;/div&gt;</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">AtelierChatbot.jsx</div>
+  <div class="code-box">                &lt;p className="text-[11px] text-[#C5A869] flex items-center gap-1.5 mt-0.5"&gt;
+                  &lt;span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" /&gt;
+                  Online • Bespoke Consultation
+                &lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div className="flex items-center gap-1"&gt;
+              &lt;button
+                onClick={handleResetChat}
+                title="Restart Chat"
+                className="p-1.5 text-[#FBF6EC]/70 hover:text-[#FBF6EC] hover:bg-white/10 rounded-full transition-colors cursor-pointer"
+              &gt;
+                &lt;RefreshCw className="w-4 h-4" /&gt;
+              &lt;/button&gt;
+              &lt;button
+                onClick={() =&gt; setIsOpen(false)}
+                title="Close Chat"
+                className="p-1.5 text-[#FBF6EC]/70 hover:text-[#FBF6EC] hover:bg-white/10 rounded-full transition-colors cursor-pointer"
+              &gt;
+                &lt;X className="w-5 h-5" /&gt;
+              &lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          {/* Quick Filter Chips Carousel (Under Header) */}
+          &lt;div className="bg-[#FAF4EB] border-b border-[#D5C8B5] px-3 py-2 flex items-center gap-2 overflow-x-auto no-scrollbar shrink-0"&gt;
+            {quickChips.map((chip, idx) =&gt; (
+              &lt;button
+                key={idx}
+                onClick={() =&gt; handleSendMessage(chip.query)}
+                className="text-[11px] font-medium whitespace-nowrap bg-white text-[#5C1A21] px-2.5 py-1 rounded-full border border-[#D5C8B5] hover:border-[#A9812F] hover:bg-[#5C1A21] hover:text-[#FBF6EC] transition-all cursor-pointer shadow-xs"
+              &gt;
+                {chip.label}
+              &lt;/button&gt;
+            ))}
+          &lt;/div&gt;
+</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">AtelierChatbot.jsx</div>
+  <div class="code-box">          {/* Messages Scroll View */}
+          &lt;div className="flex-1 p-3.5 sm:p-4 overflow-y-auto space-y-3.5 bg-[#FBF6EC]"&gt;
+            {messages.map((msg) =&gt; (
+              &lt;div
+                key={msg.id}
+                className={`flex flex-col ${msg.sender === 'user' ? 'items-end' : 'items-start'} animate-fadeIn`}
+              &gt;
+                {/* Bubble */}
+                &lt;div
+                  className={`max-w-[85%] rounded-2xl p-3 text-xs sm:text-sm leading-relaxed shadow-xs ${
+                    msg.sender === 'user'
+                      ? 'bg-[#5C1A21] text-[#FBF6EC] rounded-tr-none border border-[#A9812F]/40'
+                      : 'bg-white text-[#2B211D] rounded-tl-none border border-[#D5C8B5]/80 shadow-xs'
+                  }`}
+                &gt;
+                  &lt;p className="whitespace-pre-line font-sans"&gt;{msg.text}&lt;/p&gt;
+                &lt;/div&gt;
+
+                {/* Timestamp */}
+                &lt;span className="text-[10px] text-[#8C827A] mt-1 px-1"&gt;
+                  {msg.time}
+                &lt;/span&gt;
+
+                {/* Interactive Action Chips inside Bot message */}
+                {msg.options &amp;&amp; msg.options.length &gt; 0 &amp;&amp; (
+                  &lt;div className="mt-2 flex flex-wrap gap-1.5 max-w-[95%]"&gt;
+                    {msg.options.map((opt, i) =&gt; (
+                      &lt;button
+                        key={i}
+                        onClick={() =&gt; handleActionClick(opt)}
+                        className="text-[11px] font-medium text-left bg-white text-[#5C1A21] hover:bg-[#5C1A21] hover:text-[#FBF6EC] px-2.5 py-1.5 rounded-lg border border-[#A9812F]/40 shadow-xs transition-colors flex items-center gap-1.5 cursor-pointer"
+                      &gt;
+                        {opt.action === 'open_appointment' &amp;&amp; &lt;Calendar className="w-3.5 h-3.5 text-[#A9812F]" /&gt;}
+                        {opt.action === 'open_whatsapp' &amp;&amp; &lt;Phone className="w-3.5 h-3.5 text-emerald-600" /&gt;}
+                        {opt.label}
+                      &lt;/button&gt;
+                    ))}
+                  &lt;/div&gt;</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">AtelierChatbot.jsx</div>
+  <div class="code-box">                )}
+              &lt;/div&gt;
+            ))}
+
+            {/* Typing Indicator */}
+            {isTyping &amp;&amp; (
+              &lt;div className="flex items-center gap-2 text-xs text-[#5C1A21] font-medium bg-white/80 border border-[#D5C8B5] px-3 py-2 rounded-xl w-max animate-pulse"&gt;
+                &lt;Crown className="w-3.5 h-3.5 text-[#A9812F]" /&gt;
+                &lt;span&gt;Royal Stylist is curating response...&lt;/span&gt;
+              &lt;/div&gt;
+            )}
+
+            &lt;div ref={messagesEndRef} /&gt;
+          &lt;/div&gt;
+
+          {/* Quick Action Footer Banner */}
+          &lt;div className="bg-[#FAF4EB] border-t border-[#D5C8B5] px-3 py-1.5 flex items-center justify-between text-[11px] text-[#5C1A21]"&gt;
+            &lt;button
+              onClick={() =&gt; { setAppointmentModalOpen(true); setIsOpen(false); }}
+              className="flex items-center gap-1 font-semibold hover:text-[#A9812F] transition-colors cursor-pointer"
+            &gt;
+              &lt;Calendar className="w-3.5 h-3.5" /&gt;
+              Book Appointment
+            &lt;/button&gt;
+            &lt;span className="text-[#D5C8B5]"&gt;|&lt;/span&gt;
+            &lt;button
+              onClick={() =&gt; {
+                const waUrl = getWhatsAppLink("Hello M.S Fashion Master, I am connecting from the website chatbot for bespoke tailoring guidance.");
+                window.open(waUrl, '_blank', 'noopener,noreferrer');
+              }}
+              className="flex items-center gap-1 font-semibold text-emerald-700 hover:text-emerald-800 transition-colors cursor-pointer"
+            &gt;
+              &lt;Phone className="w-3.5 h-3.5" /&gt;
+              Direct WhatsApp Master
+            &lt;/button&gt;
+          &lt;/div&gt;
+
+          {/* Input Bar */}</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">AtelierChatbot.jsx</div>
+  <div class="code-box">          &lt;form
+            onSubmit={(e) =&gt; {
+              e.preventDefault();
+              handleSendMessage();
+            }}
+            className="p-2.5 bg-white border-t border-[#D5C8B5] flex items-center gap-2 shrink-0"
+          &gt;
+            &lt;input
+              type="text"
+              value={inputMessage}
+              onChange={(e) =&gt; setInputMessage(e.target.value)}
+              placeholder="Ask about Sherwanis, fittings, pricing..."
+              className="flex-1 bg-[#FBF6EC] border border-[#D5C8B5] focus:border-[#A9812F] focus:outline-none rounded-xl px-3.5 py-2 text-xs sm:text-sm text-[#2B211D] placeholder-[#8C827A]"
+            /&gt;
+            &lt;button
+              type="submit"
+              disabled={!inputMessage.trim()}
+              className="w-9 h-9 rounded-xl bg-[#5C1A21] text-[#FBF6EC] hover:bg-[#461319] disabled:opacity-40 disabled:cursor-not-allowed flex items-center justify-center transition-colors cursor-pointer shrink-0 shadow-xs"
+            &gt;
+              &lt;Send className="w-4 h-4" /&gt;
+            &lt;/button&gt;
+          &lt;/form&gt;
+        &lt;/div&gt;
+      )}
+    &lt;/&gt;
+  );
+}</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">AppointmentModal.jsx</div>
+  <div class="code-box">import React, { useState, useRef, useEffect } from 'react';
+import {
+  X, Calendar, Clock, Store, Package, CheckCircle, MessageSquare,
+  ChevronDown, Check, AlertCircle, Phone, Sparkles, MapPin, ExternalLink,
+  Navigation, Mail, ShieldCheck, ArrowRight, RotateCcw, IndianRupee
+} from 'lucide-react';
+import { useConfig } from '../context/ConfigContext';
+import { api } from '../services/api';
+
+const COUNTRY_CODES = [
+  { code: '+91', label: '🇮🇳 India (+91)', digits: 10 },
+  { code: '+971', label: '🇦🇪 UAE (+971)', digits: 9 },
+  { code: '+44', label: '🇬🇧 UK (+44)', digits: 10 },
+  { code: '+1', label: '🇺🇸 USA (+1)', digits: 10 }
+];
+
+const CATEGORY_OPTIONS = [
+  { id: 'Sherwani', label: 'Imperial Wedding Sherwani' },
+  { id: 'Jodhpuri', label: 'Aristocratic Jodhpuri Bandhgala' },
+  { id: 'Indo-Western', label: 'Contemporary Indo-Western' },
+  { id: 'Blazer', label: 'Bespoke Blazer / Velvet Tuxedo' }
+];
+
+export default function AppointmentModal() {
+  const { appointmentModalOpen, setAppointmentModalOpen, getWhatsAppLink, brandConfig } = useConfig();
+
+  // Wizard Steps: 'form' | 'otp' | 'success'
+  const [step, setStep] = useState('form');
+
+  // Form Fields
+  const [appointmentType, setAppointmentType] = useState('custom-order');
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [emailError, setEmailError] = useState('');
+  const [phoneNumber, setPhoneNumber] = useState('');
+  const [countryCode, setCountryCode] = useState('+91');
+  const [phoneError, setPhoneError] = useState('');
+  const [categoryInterest, setCategoryInterest] = useState('Sherwani');</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">AppointmentModal.jsx</div>
+  <div class="code-box">  const [preferredDate, setPreferredDate] = useState('');
+  const [customDateInput, setCustomDateInput] = useState('');
+  const [budget, setBudget] = useState('');
+  const [city, setCity] = useState('');
+  const [notes, setNotes] = useState('');
+
+  // OTP Verification States
+  const [otp, setOtp] = useState('');
+  const [otpError, setOtpError] = useState('');
+  const [devOtp, setDevOtp] = useState(null);
+  const [countdown, setCountdown] = useState(0);
+  const [isSendingOtp, setIsSendingOtp] = useState(false);
+  const [isVerifying, setIsVerifying] = useState(false);
+  const [isDetectingLocation, setIsDetectingLocation] = useState(false);
+
+  // Custom in-DOM dropdown states
+  const [categoryDropdownOpen, setCategoryDropdownOpen] = useState(false);
+  const [datePickerOpen, setDatePickerOpen] = useState(false);
+
+  const categoryRef = useRef(null);
+  const dateRef = useRef(null);
+  const timerRef = useRef(null);
+
+  // Countdown timer for OTP resend
+  useEffect(() =&gt; {
+    if (countdown &gt; 0) {
+      timerRef.current = setTimeout(() =&gt; {
+        setCountdown((prev) =&gt; prev - 1);
+      }, 1000);
+    }
+    return () =&gt; {
+      if (timerRef.current) clearTimeout(timerRef.current);
+    };
+  }, [countdown]);
+
+  // Auto-detect client city via browser geolocation
+  const handleDetectLocation = () =&gt; {
+    if (!navigator.geolocation) {</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">AppointmentModal.jsx</div>
+  <div class="code-box">      alert('Geolocation is not supported by your browser.');
+      return;
+    }
+    setIsDetectingLocation(true);
+    navigator.geolocation.getCurrentPosition(
+      async (pos) =&gt; {
+        try {
+          const { latitude, longitude } = pos.coords;
+          const res = await fetch(
+            `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&amp;longitude=${longitude}&amp;localityLanguage=en`
+          );
+          const data = await res.json();
+          const detectedCity = data.city || data.locality || data.principalSubdivision || 'Mumbai';
+          setCity(detectedCity);
+        } catch (err) {
+          setCity('Mumbai');
+        }
+        setIsDetectingLocation(false);
+      },
+      () =&gt; {
+        setIsDetectingLocation(false);
+        setCity('Mumbai');
+      },
+      { timeout: 7000 }
+    );
+  };
+
+  // Close dropdowns on outside click
+  useEffect(() =&gt; {
+    const handleClickOutside = (e) =&gt; {
+      if (categoryRef.current &amp;&amp; !categoryRef.current.contains(e.target)) {
+        setCategoryDropdownOpen(false);
+      }
+      if (dateRef.current &amp;&amp; !dateRef.current.contains(e.target)) {
+        setDatePickerOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">AppointmentModal.jsx</div>
+  <div class="code-box">    return () =&gt; document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  if (!appointmentModalOpen) return null;
+
+  // Phone formatting
+  const cleanDigits = phoneNumber.replace(/\D/g, '');
+  const handlePhoneChange = (val) =&gt; {
+    const cleaned = val.replace(/\D/g, '').slice(0, 10);
+    setPhoneNumber(cleaned);
+    if (cleaned.length === 10 || cleaned.length === 0) {
+      setPhoneError('');
+    }
+  };
+
+  // 1. Submit Details &amp; Request OTP
+  const handleRequestOtp = async (e) =&gt; {
+    e.preventDefault();
+    setEmailError('');
+    setPhoneError('');
+
+    if (!name.trim()) return;
+
+    // Validate Email
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!email.trim() || !emailRegex.test(email.trim())) {
+      setEmailError('Please enter a valid royal email address to receive your verification code.');
+      return;
+    }
+
+    // Validate Phone only if entered (Phone is Optional)
+    if (cleanDigits.length &gt; 0) {
+      if (countryCode === '+91' &amp;&amp; cleanDigits.length !== 10) {
+        setPhoneError('Please enter a valid 10-digit number or leave blank.');
+        return;
+      }
+      if (countryCode !== '+91' &amp;&amp; cleanDigits.length &lt; 8) {
+        setPhoneError('Please enter a valid phone number or leave blank.');</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">AppointmentModal.jsx</div>
+  <div class="code-box">        return;
+      }
+    }
+
+    setIsSendingOtp(true);
+    setOtpError('');
+
+    try {
+      const res = await api.sendOtp({
+        email: email.trim(),
+        customerName: name.trim()
+      });
+
+      setDevOtp(res.devOtp || null);
+      setStep('otp');
+      setOtp('');
+      setCountdown(60);
+    } catch (err) {
+      setEmailError(err.response?.data?.message || 'Failed to dispatch verification code. Please try again.');
+    }
+
+    setIsSendingOtp(false);
+  };
+
+  // Resend OTP
+  const handleResendOtp = async () =&gt; {
+    if (countdown &gt; 0 || isSendingOtp) return;
+    setIsSendingOtp(true);
+    setOtpError('');
+
+    try {
+      const res = await api.sendOtp({
+        email: email.trim(),
+        customerName: name.trim()
+      });
+      setDevOtp(res.devOtp || null);
+      setCountdown(60);
+    } catch (err) {</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">AppointmentModal.jsx</div>
+  <div class="code-box">      setOtpError(err.response?.data?.message || 'Failed to resend verification code.');
+    }
+    setIsSendingOtp(false);
+  };
+
+  // 2. Verify OTP &amp; Finalize Appointment
+  const handleVerifyAndConfirm = async (e) =&gt; {
+    if (e) e.preventDefault();
+    if (otp.length !== 6) {
+      setOtpError('Please enter the complete 6-digit verification code.');
+      return;
+    }
+
+    setIsVerifying(true);
+    setOtpError('');
+
+    const fullPhone = cleanDigits.length &gt; 0 ? `${countryCode} ${cleanDigits}` : 'Not Provided';
+    const selectedCatLabel = CATEGORY_OPTIONS.find(c =&gt; c.id === categoryInterest)?.label || categoryInterest;
+    const estTotal = parseInt(String(budget).replace(/[^0-9]/g, ''), 10) || 0;
+
+    try {
+      // 1. Verify OTP
+      await api.verifyOtp({
+        email: email.trim(),
+        otp: otp.trim()
+      });
+
+      // 2. Save verified consultation lead
+      await api.submitInquiry({
+        customerName: name.trim(),
+        customerPhone: fullPhone,
+        customerEmail: email.trim(),
+        city: city.trim(),
+        consultationType: appointmentType,
+        productId: 'APPOINTMENT-' + categoryInterest.toUpperCase(),
+        productTitle: `Bespoke Appointment (${selectedCatLabel})`,
+        selectedAccessories: [],
+        estimatedTotal: estTotal,</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">AppointmentModal.jsx</div>
+  <div class="code-box">        budget: budget,
+        notes: `Expected Budget: ${budget} | Preferred Date: ${preferredDate || 'Earliest Available'} | Format: ${appointmentType} | Notes: ${notes}`,
+        otp: otp.trim()
+      });
+
+      setStep('success');
+    } catch (err) {
+      setOtpError(err.response?.data?.message || 'Invalid or expired verification code.');
+    }
+
+    setIsVerifying(false);
+  };
+
+  // Direct WhatsApp Booking fallback
+  const handleWhatsAppBooking = () =&gt; {
+    const typeLabel = appointmentType === 'bulk-order' ? 'Bulk Order (Size-Range)' : 'Custom Order (Made-to-Measure)';
+    const selectedCatLabel = CATEGORY_OPTIONS.find(c =&gt; c.id === categoryInterest)?.label || categoryInterest;
+    const fullPhone = cleanDigits.length &gt; 0 ? `${countryCode} ${cleanDigits}` : 'Via WhatsApp';
+
+    const msg = `*👑 APPOINTMENT CONFIRMED — M.S FASHION*\n\nHello M.S Fashion Team,\nI have verified my bespoke appointment request:\n\n*Name:* ${name || 'Prospective Client'}\n*Email (Verified):* ${email}\n*Phone:* ${fullPhone}\n*Consultation Format:* ${typeLabel}\n*Category of Interest:* ${selectedCatLabel}\n*Expected Budget:* ${budget}\n*Preferred Date:* ${preferredDate || 'Earliest Available'}\n*City:* ${city || 'Not Specified'}\n*Notes:* ${notes || 'Looking forward to royal consultation.'}`;
+    window.open(getWhatsAppLink(msg), '_blank', 'noopener,noreferrer');
+  };
+
+  const handleClose = () =&gt; {
+    setAppointmentModalOpen(false);
+    setStep('form');
+    setPhoneNumber('');
+    setName('');
+    setEmail('');
+    setOtp('');
+    setDevOtp(null);
+    setPhoneError('');
+    setEmailError('');
+    setOtpError('');
+    setCategoryDropdownOpen(false);
+    setDatePickerOpen(false);
+  };
+</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">AppointmentModal.jsx</div>
+  <div class="code-box">  // Quick Date presets
+  const setQuickDate = (daysAhead, label) =&gt; {
+    const d = new Date();
+    d.setDate(d.getDate() + daysAhead);
+    const formatted = d.toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
+    setPreferredDate(`${label} (${formatted})`);
+    setCustomDateInput('');
+    setDatePickerOpen(false);
+  };
+
+  // Apply calendar date without premature closing glitch
+  const applyCalendarDate = (dateVal) =&gt; {
+    if (!dateVal) return;
+    const parts = dateVal.split('-');
+    if (parts.length === 3) {
+      const y = parseInt(parts[0], 10);
+      const m = parseInt(parts[1], 10) - 1;
+      const d = parseInt(parts[2], 10);
+      const dateObj = new Date(y, m, d);
+      if (!isNaN(dateObj.getTime())) {
+        const formatted = dateObj.toLocaleDateString('en-GB', {
+          day: '2-digit',
+          month: 'short',
+          year: 'numeric'
+        });
+        setPreferredDate(formatted);
+        setDatePickerOpen(false);
+        return;
+      }
+    }
+    setPreferredDate(dateVal);
+    setDatePickerOpen(false);
+  };
+
+  const selectedCatLabel = CATEGORY_OPTIONS.find(c =&gt; c.id === categoryInterest)?.label || 'Imperial Wedding Sherwani';
+
+  return (
+    &lt;div className="fixed inset-0 z-[9999] overflow-y-auto bg-[#2B211D]/80 backdrop-blur-sm flex items-center justify-center p-3 sm:p-6 animate-fadeIn"&gt;</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">AppointmentModal.jsx</div>
+  <div class="code-box">      &lt;div className="relative w-full max-w-xl bg-[#FBF6EC] border-2 border-[#A9812F] shadow-2xl rounded-none overflow-hidden my-auto"&gt;
+        {/* Header Ribbon */}
+        &lt;div className="bg-[#5C1A21] text-[#FBF6EC] p-4 sm:p-5 flex items-center justify-between border-b border-[#A9812F]/40"&gt;
+          &lt;div&gt;
+            &lt;span className="text-[11px] uppercase tracking-widest text-[#C5A869] font-semibold block"&gt;
+              Bespoke Tailoring Experience
+            &lt;/span&gt;
+            &lt;h2 className="font-serif text-xl sm:text-2xl font-bold text-[#FBF6EC] tracking-wide"&gt;
+              {step === 'otp' ? 'Email OTP Verification' : 'Book a Private Consultation'}
+            &lt;/h2&gt;
+          &lt;/div&gt;
+          &lt;button
+            onClick={handleClose}
+            className="p-1.5 text-[#FBF6EC]/80 hover:text-[#FBF6EC] hover:bg-[#461319] rounded-full transition-colors cursor-pointer"
+            title="Close modal"
+          &gt;
+            &lt;X className="w-5 h-5" /&gt;
+          &lt;/button&gt;
+        &lt;/div&gt;
+
+        {/* ==================== STEP 3: SUCCESS VOUCHER ==================== */}
+        {step === 'success' &amp;&amp; (
+          &lt;div className="p-8 text-center space-y-4 animate-fadeIn"&gt;
+            &lt;div className="w-16 h-16 rounded-full bg-[#5C1A21] text-[#C5A869] border-2 border-[#A9812F] flex items-center justify-center mx-auto shadow-md"&gt;
+              &lt;CheckCircle className="w-9 h-9 text-[#25D366]" /&gt;
+            &lt;/div&gt;
+            &lt;h3 className="font-serif text-2xl font-bold text-[#5C1A21]"&gt;
+              Consultation Appointment Confirmed
+            &lt;/h3&gt;
+            &lt;p className="text-xs sm:text-sm text-[#574940] max-w-md mx-auto leading-relaxed"&gt;
+              Thank you, &lt;strong className="text-[#2B211D]"&gt;{name}&lt;/strong&gt;. Your royal consultation request has been verified and securely registered with our master atelier.
+            &lt;/p&gt;
+
+            {/* Verified Credentials Summary Card */}
+            &lt;div className="bg-[#ECE2D2] border border-[#D5C8B5] p-3.5 max-w-sm mx-auto text-left space-y-1.5 text-xs"&gt;
+              &lt;div className="flex items-center justify-between"&gt;
+                &lt;span className="text-[#7A6E65]"&gt;Verified Email:&lt;/span&gt;
+                &lt;span className="font-mono font-bold text-[#5C1A21] flex items-center gap-1"&gt;</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">AppointmentModal.jsx</div>
+  <div class="code-box">                  &lt;span&gt;{email}&lt;/span&gt;
+                  &lt;Check className="w-3.5 h-3.5 text-emerald-700" /&gt;
+                &lt;/span&gt;
+              &lt;/div&gt;
+              &lt;div className="flex items-center justify-between"&gt;
+                &lt;span className="text-[#7A6E65]"&gt;Phone Contact:&lt;/span&gt;
+                &lt;span className="font-mono text-[#2B211D]"&gt;
+                  {cleanDigits.length &gt; 0 ? `${countryCode} ${cleanDigits}` : 'Not Provided'}
+                &lt;/span&gt;
+              &lt;/div&gt;
+              &lt;div className="flex items-center justify-between"&gt;
+                &lt;span className="text-[#7A6E65]"&gt;Silhouette:&lt;/span&gt;
+                &lt;span className="font-serif font-semibold text-[#5C1A21]"&gt;{selectedCatLabel}&lt;/span&gt;
+              &lt;/div&gt;
+              &lt;div className="flex items-center justify-between"&gt;
+                &lt;span className="text-[#7A6E65]"&gt;Expected Budget:&lt;/span&gt;
+                &lt;span className="font-semibold text-[#5C1A21]"&gt;{budget}&lt;/span&gt;
+              &lt;/div&gt;
+              &lt;div className="flex items-center justify-between"&gt;
+                &lt;span className="text-[#7A6E65]"&gt;Preferred Date:&lt;/span&gt;
+                &lt;span className="font-medium text-[#2B211D]"&gt;{preferredDate || 'Earliest Available'}&lt;/span&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-3"&gt;
+              &lt;button
+                type="button"
+                onClick={handleWhatsAppBooking}
+                className="w-full sm:w-auto px-6 py-3 bg-[#25D366] hover:bg-[#1EBE5D] text-white text-xs uppercase tracking-widest font-bold flex items-center justify-center gap-2 shadow-lg transition-all cursor-pointer"
+              &gt;
+                &lt;MessageSquare className="w-4 h-4 fill-white" /&gt;
+                &lt;span&gt;Open in WhatsApp&lt;/span&gt;
+              &lt;/button&gt;
+
+              &lt;button
+                type="button"
+                onClick={handleClose}
+                className="w-full sm:w-auto px-6 py-3 border border-[#5C1A21] text-[#5C1A21] text-xs uppercase tracking-widest font-semibold hover:bg-[#EAE2D5] transition-colors cursor-pointer"</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">PricePanelModal.jsx</div>
+  <div class="code-box">import React, { useState } from 'react';
+import { X, MessageSquare, Check, ShieldCheck, Sparkles, Calendar, User, MapPin } from 'lucide-react';
+import { useConfig } from '../context/ConfigContext';
+import { api } from '../services/api';
+
+/**
+ * PricePanelModal
+ * Opened by "Get This Item".
+ * Shows:
+ * 1. Base price of garment
+ * 2. Selected accessories breakdown
+ * 3. Grand Running Total
+ * 4. Client input fields (Your Name, City / Location, Customization Notes)
+ * 5. Primary "Contact via WhatsApp" CTA with pre-populated bespoke message.
+ */
+export default function PricePanelModal({
+  isOpen,
+  onClose,
+  product,
+  selectedAccessories = [],
+  totalPrice = 0
+}) {
+  const { formatINR, getWhatsAppLink, brandConfig } = useConfig();
+
+  const [customerName, setCustomerName] = useState('');
+  const [customerCity, setCustomerCity] = useState('');
+  const [customNotes, setCustomNotes] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [photoCopiedToast, setPhotoCopiedToast] = useState(false);
+
+  if (!isOpen || !product) return null;
+
+  const accessoriesTotal = selectedAccessories.reduce((sum, item) =&gt; sum + (item.price || 0), 0);
+  const grandTotal = (product.basePrice || 0) + accessoriesTotal;
+
+  // Compute full photo URL
+  const photoUrl = product?.realImageUrl
+    ? (product.realImageUrl.startsWith('http') ? product.realImageUrl : `${window.location.origin}${product.realImageUrl}`)</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">PricePanelModal.jsx</div>
+  <div class="code-box">    : '';
+  const productPageUrl = `${window.location.origin}/product/${product?.id}`;
+
+  // Build the rich WhatsApp consultation message
+  const buildWhatsAppMessage = () =&gt; {
+    const accList = selectedAccessories.length &gt; 0
+      ? selectedAccessories.map((a) =&gt; `• ${a.name} (+${formatINR(a.price)})`).join('\n')
+      : 'None (Standard Garment Only)';
+
+    let msg = `*👑 BESPOKE CONSULTATION REQUEST — M.S FASHION*\n\n`;
+    if (photoUrl) {
+      msg += `📸 *DESIGN PHOTO:* ${photoUrl}\n\n`;
+    }
+    msg += `Hello M.S Fashion Team,\nI am interested in tailoring this bespoke ensemble:\n\n`;
+    msg += `*Garment:* ${product.title}\n`;
+    msg += `*Reference ID:* ${product.id}\n`;
+    msg += `*Category:* ${product.category} (${product.subCategory})\n`;
+    msg += `*Base Price:* ${formatINR(product.basePrice)}\n\n`;
+    msg += `*Selected Bespoke Accessories:*\n${accList}\n\n`;
+    msg += `*Estimated Grand Total:* ${formatINR(grandTotal)}\n\n`;
+
+    if (customerName) msg += `*Client Name:* ${customerName}\n`;
+    if (customerCity) msg += `*City:* ${customerCity}\n`;
+    if (customNotes) msg += `*Customization Notes:* ${customNotes}\n\n`;
+
+    msg += `🔗 *View Design on Website:* ${productPageUrl}\n\n`;
+    msg += `Please guide me with the measurement process, fabric swatch consultation, and bespoke delivery schedule.`;
+    return msg;
+  };
+
+  const handleWhatsAppClick = async () =&gt; {
+    setIsSubmitting(true);
+    if (customerName || customerCity) {
+      try {
+        await api.submitInquiry({
+          customerName: customerName || 'Bespoke Client (WhatsApp Direct)',
+          customerPhone: 'Via WhatsApp',
+          city: customerCity,</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">PricePanelModal.jsx</div>
+  <div class="code-box">          consultationType: 'whatsapp',
+          productId: product.id,
+          productTitle: product.title,
+          selectedAccessories: selectedAccessories.map((a) =&gt; a.name),
+          estimatedTotal: grandTotal,
+          notes: customNotes
+        });
+      } catch (err) {
+        // Continue
+      }
+    }
+
+    const messageText = buildWhatsAppMessage();
+
+    // Clipboard Copy fallback (allows instant Ctrl+V into chat to attach photo directly)
+    if (photoUrl &amp;&amp; navigator.clipboard &amp;&amp; window.ClipboardItem) {
+      try {
+        const response = await fetch(photoUrl);
+        if (response.ok) {
+          const blob = await response.blob();
+          if (blob.type === 'image/png') {
+            await navigator.clipboard.write([
+              new ClipboardItem({ 'image/png': blob })
+            ]);
+            setPhotoCopiedToast(true);
+            setTimeout(() =&gt; setPhotoCopiedToast(false), 6000);
+          }
+        }
+      } catch (e) {}
+    }
+
+    // Direct WhatsApp opening strictly to M.S Fashion Master's Number
+    const waUrl = getWhatsAppLink(messageText);
+    window.open(waUrl, '_blank', 'noopener,noreferrer');
+    setIsSubmitting(false);
+  };
+
+  return (</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">PricePanelModal.jsx</div>
+  <div class="code-box">    &lt;div className="fixed inset-0 z-[9999] overflow-y-auto bg-[#2B211D]/80 backdrop-blur-sm flex items-center justify-center p-3 sm:p-6 animate-fadeIn"&gt;
+      &lt;div className="relative w-full max-w-2xl bg-[#FBF6EC] border border-[#A9812F]/40 shadow-2xl rounded-none overflow-hidden my-auto"&gt;
+        {/* Header Ribbon */}
+        &lt;div className="bg-[#5C1A21] text-[#FBF6EC] p-4 sm:p-5 flex items-center justify-between border-b border-[#A9812F]/30"&gt;
+          &lt;div&gt;
+            &lt;span className="text-[11px] uppercase tracking-widest text-[#C5A869] font-medium block"&gt;
+              Bespoke Price Breakdown &amp; Consultation
+            &lt;/span&gt;
+            &lt;h2 className="font-serif text-xl sm:text-2xl font-bold text-[#FBF6EC] tracking-wide"&gt;
+              {product.title}
+            &lt;/h2&gt;
+          &lt;/div&gt;
+          &lt;button
+            onClick={onClose}
+            className="p-1.5 text-[#FBF6EC]/80 hover:text-[#FBF6EC] hover:bg-[#461319] rounded-full transition-colors cursor-pointer"
+            title="Close panel"
+          &gt;
+            &lt;X className="w-6 h-6" /&gt;
+          &lt;/button&gt;
+        &lt;/div&gt;
+
+        {/* Modal Body */}
+        &lt;div className="p-5 sm:p-6 space-y-5 max-h-[75vh] overflow-y-auto"&gt;
+          {/* Garment Visual Header with Photo &amp; Ref */}
+          &lt;div className="bg-[#FAF4EB] border border-[#D5C8B5] p-3.5 flex items-center gap-3.5 shadow-xs"&gt;
+            {product.realImageUrl ? (
+              &lt;div className="w-14 h-20 bg-white border border-[#A9812F]/40 shadow-xs shrink-0 overflow-hidden"&gt;
+                &lt;img
+                  src={product.realImageUrl}
+                  alt={product.title}
+                  className="w-full h-full object-contain"
+                /&gt;
+              &lt;/div&gt;
+            ) : (
+              &lt;div className="w-14 h-20 bg-[#EAE2D5] border border-[#D5C8B5] flex items-center justify-center text-[9px] text-[#5C1A21] font-mono text-center p-1 shrink-0"&gt;
+                Garment
+              &lt;/div&gt;
+            )}</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">PricePanelModal.jsx</div>
+  <div class="code-box">            &lt;div className="flex-1 min-w-0 space-y-1"&gt;
+              &lt;div className="flex items-center gap-2 flex-wrap"&gt;
+                &lt;span className="px-2 py-0.5 bg-[#5C1A21] text-[#FBF6EC] text-[9px] font-bold uppercase tracking-wider rounded"&gt;
+                  {product.category}
+                &lt;/span&gt;
+                &lt;span className="px-1.5 py-0.5 bg-[#EAE2D5] border border-[#C5B49E] text-[#5C1A21] font-mono font-bold text-[10px] rounded"&gt;
+                  Ref: {product.id}
+                &lt;/span&gt;
+              &lt;/div&gt;
+              &lt;h4 className="font-serif font-bold text-sm text-[#2B211D] truncate"&gt;
+                {product.title}
+              &lt;/h4&gt;
+              &lt;p className="text-[11px] text-[#25D366] font-medium flex items-center gap-1"&gt;
+                &lt;span&gt;✓ Design photo will be attached for WhatsApp&lt;/span&gt;
+              &lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          {/* Price Breakdown Card */}
+          &lt;div className="bg-[#F4ECE1] border border-[#E5D9C5] p-4 sm:p-5"&gt;
+            &lt;h3 className="font-serif font-bold text-base text-[#5C1A21] uppercase tracking-wider pb-2 border-b border-[#E5D9C5] mb-3 flex items-center justify-between"&gt;
+              &lt;span&gt;Cost Summary&lt;/span&gt;
+              &lt;span className="text-xs font-sans font-normal text-[#8A796F]"&gt;
+                Handcrafted Tailoring
+              &lt;/span&gt;
+            &lt;/h3&gt;
+
+            {/* Base Price Row */}
+            &lt;div className="flex items-center justify-between py-2 border-b border-[#E5D9C5]/60 text-sm"&gt;
+              &lt;div className="flex flex-col"&gt;
+                &lt;span className="font-medium text-[#2B211D]"&gt;Base Garment Crafting&lt;/span&gt;
+                &lt;span className="text-xs text-[#7A6E65]"&gt;{product.fabric} • {product.embroidery}&lt;/span&gt;
+              &lt;/div&gt;
+              &lt;span className="font-serif font-bold text-base text-[#2B211D]"&gt;
+                {formatINR(product.basePrice)}
+              &lt;/span&gt;
+            &lt;/div&gt;
+</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">PricePanelModal.jsx</div>
+  <div class="code-box">            {/* Selected Accessories Items */}
+            {selectedAccessories.length &gt; 0 ? (
+              &lt;div className="py-2 space-y-1.5 border-b border-[#E5D9C5]/60"&gt;
+                &lt;span className="text-xs font-semibold uppercase tracking-wider text-[#8F6B24] block"&gt;
+                  Bespoke Accessories Included:
+                &lt;/span&gt;
+                {selectedAccessories.map((acc) =&gt; (
+                  &lt;div key={acc.key} className="flex items-center justify-between text-xs sm:text-sm pl-2"&gt;
+                    &lt;span className="text-[#4A3E38] flex items-center gap-1.5"&gt;
+                      &lt;Check className="w-3.5 h-3.5 text-[#5C1A21]" /&gt;
+                      {acc.name}
+                    &lt;/span&gt;
+                    &lt;span className="font-medium text-[#5C1A21]"&gt;
+                      +{formatINR(acc.price)}
+                    &lt;/span&gt;
+                  &lt;/div&gt;
+                ))}
+              &lt;/div&gt;
+            ) : (
+              &lt;div className="py-2.5 text-xs text-[#8A7D74] italic border-b border-[#E5D9C5]/60"&gt;
+                No extra accessories selected. (You can toggle accessories on the product page).
+              &lt;/div&gt;
+            )}
+
+            {/* Running Total Row */}
+            &lt;div className="flex items-center justify-between pt-3 mt-1"&gt;
+              &lt;div&gt;
+                &lt;span className="font-serif font-bold text-lg sm:text-xl text-[#5C1A21]"&gt;
+                  Estimated Grand Total:
+                &lt;/span&gt;
+                &lt;span className="block text-[11px] text-[#7A6E65]"&gt;
+                  Inclusive of master tailor fittings &amp; hand craftsmanship
+                &lt;/span&gt;
+              &lt;/div&gt;
+              &lt;div className="text-right"&gt;
+                &lt;span className="font-serif font-bold text-2xl sm:text-3xl text-[#5C1A21]"&gt;
+                  {formatINR(grandTotal)}
+                &lt;/span&gt;</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">PricePanelModal.jsx</div>
+  <div class="code-box">              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          {/* Bespoke Assurance Banner */}
+          &lt;div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs text-[#52443C] bg-[#ECE2D2]/50 p-3.5 border border-[#E0D4C0]"&gt;
+            &lt;div className="flex items-center gap-2"&gt;
+              &lt;ShieldCheck className="w-4 h-4 text-[#A9812F] shrink-0" /&gt;
+              &lt;span&gt;100% Custom Fit Guarantee&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div className="flex items-center gap-2"&gt;
+              &lt;Sparkles className="w-4 h-4 text-[#A9812F] shrink-0" /&gt;
+              &lt;span&gt;Pure Handloom Fabrics&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div className="flex items-center gap-2"&gt;
+              &lt;Calendar className="w-4 h-4 text-[#A9812F] shrink-0" /&gt;
+              &lt;span&gt;Delivery in {product.leadTime || '15-20 Days'}&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          {/* Client Details Input Fields (Clean, without the heading text) */}
+          &lt;div className="space-y-3 pt-1"&gt;
+            &lt;div className="grid grid-cols-1 sm:grid-cols-2 gap-3"&gt;
+              &lt;div&gt;
+                &lt;label className="block text-xs font-medium text-[#4A3E38] mb-1"&gt;Your Name&lt;/label&gt;
+                &lt;div className="relative"&gt;
+                  &lt;User className="w-3.5 h-3.5 text-[#A9812F] absolute left-3 top-3" /&gt;
+                  &lt;input
+                    type="text"
+                    value={customerName}
+                    onChange={(e) =&gt; setCustomerName(e.target.value)}
+                    placeholder="e.g. Rahul Sharma"
+                    className="w-full bg-[#FFFFFF] border border-[#D5C8B5] pl-8 pr-3 py-2 text-sm text-[#2B211D] focus:outline-none focus:border-[#5C1A21]"
+                  /&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+
+              &lt;div&gt;</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">inquiryRoutes.js</div>
+  <div class="code-box">import express from 'express';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import Inquiry from '../models/Inquiry.js';
+import { getDbStatus } from '../config/db.js';
+import { sendOtpEmail } from '../services/mailer.js';
+
+const router = express.Router();
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const inquiriesFilePath = path.resolve(__dirname, '..', 'data', 'dynamicInquiries.json');
+
+// Memory store fallback with disk persistence so appointments are never lost
+export const inMemoryInquiries = [];
+
+try {
+  if (fs.existsSync(inquiriesFilePath)) {
+    const raw = fs.readFileSync(inquiriesFilePath, 'utf8');
+    const parsed = JSON.parse(raw);
+    if (Array.isArray(parsed)) {
+      inMemoryInquiries.push(...parsed);
+      console.log(`[INQUIRIES] Loaded ${inMemoryInquiries.length} appointments from dynamicInquiries.json`);
+    }
+  }
+} catch (e) {
+  console.warn('[INQUIRIES] Notice loading dynamicInquiries.json:', e.message);
+}
+
+export const persistInquiries = () =&gt; {
+  try {
+    fs.writeFileSync(inquiriesFilePath, JSON.stringify(inMemoryInquiries, null, 2), 'utf8');
+  } catch (e) {
+    console.error('[INQUIRIES ERROR] Failed to save dynamicInquiries.json:', e.message);
+  }
+};
+
+export const getInquiriesList = () =&gt; {</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">inquiryRoutes.js</div>
+  <div class="code-box">  if (inMemoryInquiries.length === 0 &amp;&amp; fs.existsSync(inquiriesFilePath)) {
+    try {
+      const raw = fs.readFileSync(inquiriesFilePath, 'utf8');
+      const parsed = JSON.parse(raw);
+      if (Array.isArray(parsed) &amp;&amp; parsed.length &gt; 0) {
+        inMemoryInquiries.push(...parsed);
+      }
+    } catch (e) {}
+  }
+  return inMemoryInquiries;
+};
+
+// In-memory store for OTPs: email -&gt; { otp, expiresAt, attempts, verified }
+const otpStore = new Map();
+
+// POST /api/inquiries/send-otp - Generate &amp; send email verification OTP
+router.post('/send-otp', async (req, res) =&gt; {
+  try {
+    const { email, customerName } = req.body;
+    const normalizedEmail = (email || '').toLowerCase().trim();
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!normalizedEmail || !emailRegex.test(normalizedEmail)) {
+      return res.status(400).json({
+        success: false,
+        message: 'Please provide a valid royal email address (e.g. name@gmail.com).'
+      });
+    }
+
+    // Check if an OTP was recently sent (prevent flooding within 20s)
+    const existing = otpStore.get(normalizedEmail);
+    if (existing &amp;&amp; existing.createdAt &amp;&amp; (Date.now() - existing.createdAt &lt; 20000)) {
+      const waitSeconds = Math.ceil((20000 - (Date.now() - existing.createdAt)) / 1000);
+      return res.status(429).json({
+        success: false,
+        message: `Please wait ${waitSeconds} seconds before requesting a new OTP code.`
+      });
+    }</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">inquiryRoutes.js</div>
+  <div class="code-box">
+    // Generate 6-digit numeric OTP
+    const otp = Math.floor(100000 + Math.random() * 900000).toString();
+
+    otpStore.set(normalizedEmail, {
+      otp,
+      createdAt: Date.now(),
+      expiresAt: Date.now() + 10 * 60 * 1000, // 10 minutes
+      attempts: 0,
+      verified: false
+    });
+
+    const sendResult = await sendOtpEmail(normalizedEmail, customerName || 'Royal Guest', otp);
+
+    res.json({
+      success: true,
+      message: sendResult.message || 'Verification OTP sent to your email.',
+      mode: sendResult.mode,
+      devOtp: sendResult.devOtp
+    });
+  } catch (error) {
+    console.error('Error generating OTP:', error);
+    res.status(500).json({ success: false, message: 'Server error generating verification code.' });
+  }
+});
+
+// POST /api/inquiries/verify-otp - Verify the entered OTP code
+router.post('/verify-otp', (req, res) =&gt; {
+  try {
+    const { email, otp } = req.body;
+    const normalizedEmail = (email || '').toLowerCase().trim();
+
+    if (!normalizedEmail || !otp) {
+      return res.status(400).json({
+        success: false,
+        message: 'Email and 6-digit OTP code are required.'
+      });
+    }</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">inquiryRoutes.js</div>
+  <div class="code-box">
+    const record = otpStore.get(normalizedEmail);
+    if (!record) {
+      return res.status(400).json({
+        success: false,
+        message: 'No OTP requested for this email. Please click "Send OTP" first.'
+      });
+    }
+
+    if (Date.now() &gt; record.expiresAt) {
+      otpStore.delete(normalizedEmail);
+      return res.status(400).json({
+        success: false,
+        message: 'This OTP has expired (10 min limit). Please request a new code.'
+      });
+    }
+
+    record.attempts += 1;
+    if (record.attempts &gt; 5) {
+      otpStore.delete(normalizedEmail);
+      return res.status(400).json({
+        success: false,
+        message: 'Too many incorrect attempts. Please request a new code.'
+      });
+    }
+
+    if (record.otp !== String(otp).trim()) {
+      return res.status(400).json({
+        success: false,
+        message: 'Incorrect verification code. Please check your email and try again.'
+      });
+    }
+
+    record.verified = true;
+    res.json({
+      success: true,
+      message: 'Email verified successfully! You may now confirm your appointment.'
+    });</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">inquiryRoutes.js</div>
+  <div class="code-box">  } catch (error) {
+    console.error('Error verifying OTP:', error);
+    res.status(500).json({ success: false, message: 'Server error verifying OTP code.' });
+  }
+});
+
+// POST /api/inquiries - Submit a bespoke consultation request
+router.post('/', async (req, res) =&gt; {
+  try {
+    const {
+      customerName,
+      customerPhone,
+      customerEmail,
+      city,
+      consultationType,
+      productId,
+      productTitle,
+      selectedAccessories,
+      estimatedTotal,
+      budget,
+      notes,
+      otp // optional: verify in-flight if passed
+    } = req.body;
+
+    const normalizedEmail = (customerEmail || '').toLowerCase().trim();
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    // Email is now mandatory to eliminate fake submissions
+    if (!customerName || !normalizedEmail || !productId) {
+      return res.status(400).json({
+        success: false,
+        message: 'Name, email address, and product reference are required.'
+      });
+    }
+
+    if (!emailRegex.test(normalizedEmail)) {
+      return res.status(400).json({
+        success: false,</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">inquiryRoutes.js</div>
+  <div class="code-box">        message: 'Please provide a valid royal email address.'
+      });
+    }
+
+    // Check OTP verification
+    const otpRecord = otpStore.get(normalizedEmail);
+    const isOtpValidInFlight = otp &amp;&amp; otpRecord &amp;&amp; (otpRecord.otp === String(otp).trim()) &amp;&amp; (Date.now() &lt;= otpRecord.expiresAt);
+
+    if (!otpRecord?.verified &amp;&amp; !isOtpValidInFlight) {
+      return res.status(400).json({
+        success: false,
+        message: 'Email address has not been verified with OTP yet. Please verify your email first.'
+      });
+    }
+
+    // Phone is optional: if provided, validate minimum 10 digits; otherwise mark Not Provided
+    let finalPhone = customerPhone?.trim() || '';
+    if (finalPhone &amp;&amp; finalPhone !== 'Via WhatsApp' &amp;&amp; finalPhone !== 'Not Provided' &amp;&amp; finalPhone !== 'Optional (Not Provided)') {
+      const digits = finalPhone.replace(/\D/g, '');
+      if (digits.length &lt; 10) {
+        return res.status(400).json({
+          success: false,
+          message: 'If providing a phone number, please ensure it has 10 digits.'
+        });
+      }
+    } else if (!finalPhone || finalPhone === 'Optional (Not Provided)') {
+      finalPhone = 'Not Provided';
+    }
+
+    const inquiryData = {
+      customerName,
+      customerPhone: finalPhone,
+      customerEmail: normalizedEmail,
+      city: city || '',
+      consultationType: consultationType || 'whatsapp',
+      productId,
+      productTitle: productTitle || 'Custom Bespoke Garment',
+      selectedAccessories: selectedAccessories || [],</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">inquiryRoutes.js</div>
+  <div class="code-box">      estimatedTotal: Number(estimatedTotal) || 0,
+      budget: budget || '',
+      notes: notes || '',
+      status: 'pending',
+      createdAt: new Date()
+    };
+
+    const savedRecord = { ...inquiryData, _id: 'inq_' + Date.now() };
+
+    if (getDbStatus()) {
+      try {
+        const newInquiry = new Inquiry(inquiryData);
+        await newInquiry.save();
+      } catch (err) {
+        console.warn('DB save notice:', err.message);
+      }
+    }
+
+    // Always record in in-memory store &amp; persist to dynamicInquiries.json
+    inMemoryInquiries.unshift(savedRecord);
+    persistInquiries();
+
+    console.log(`\n======================================================`);
+    console.log(`👑 [NEW APPOINTMENT REGISTERED &amp; SAVED TO DISK]`);
+    console.log(`👤 Client: ${customerName}`);
+    console.log(`📧 Verified Email: ${normalizedEmail}`);
+    console.log(`📞 Phone: ${finalPhone}`);
+    console.log(`💰 Budget: ${budget || 'Not specified'}`);
+    console.log(`🏷️ Garment / Category: ${productTitle}`);
+    console.log(`📍 City: ${city || 'Not Specified'}`);
+    console.log(`📝 Notes: ${notes || 'None'}`);
+    console.log(`======================================================\n`);
+
+    // Clean up verified OTP from memory once lead is successfully saved
+    otpStore.delete(normalizedEmail);
+
+    res.status(201).json({
+      success: true,</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">inquiryRoutes.js</div>
+  <div class="code-box">      message: 'Consultation request received successfully. Our master stylist will connect with you.',
+      data: savedRecord
+    });
+  } catch (error) {
+    console.error('Error submitting inquiry:', error);
+    res.status(500).json({ success: false, message: 'Server error processing inquiry' });
+  }
+});
+
+// GET /api/inquiries - List inquiries (for admin/store master)
+router.get('/', async (req, res) =&gt; {
+  try {
+    let inquiries = [];
+    if (getDbStatus()) {
+      inquiries = await Inquiry.find().sort({ createdAt: -1 });
+    } else {
+      inquiries = [...inMemoryInquiries].reverse();
+    }
+    res.json({ success: true, count: inquiries.length, data: inquiries });
+  } catch (error) {
+    res.status(500).json({ success: false, message: 'Error retrieving inquiries' });
+  }
+});
+
+export default router;</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">mailer.js</div>
+  <div class="code-box">import nodemailer from 'nodemailer';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const dynamicConfigFile = path.resolve(__dirname, '..', 'data', 'dynamicBrandConfig.json');
+
+/**
+ * Configure Nodemailer transporter.
+ * If SMTP_EMAIL and SMTP_PASSWORD are set in .env or dynamicBrandConfig.json, it uses Gmail SMTP.
+ * Otherwise, it runs in Dev Mode and logs the OTP in the console.
+ */
+const getTransporter = () =&gt; {
+  let user = process.env.SMTP_EMAIL ? process.env.SMTP_EMAIL.trim() : '';
+  let pass = process.env.SMTP_PASSWORD ? process.env.SMTP_PASSWORD.replace(/\s+/g, '') : '';
+
+  if (!user || !pass) {
+    try {
+      if (fs.existsSync(dynamicConfigFile)) {
+        const parsed = JSON.parse(fs.readFileSync(dynamicConfigFile, 'utf-8'));
+        if (parsed.smtpEmail) user = parsed.smtpEmail.trim();
+        if (parsed.smtpPassword) pass = parsed.smtpPassword.replace(/\s+/g, '');
+      }
+    } catch (e) {}
+  }
+
+  if (!user || !pass) {
+    return null;
+  }
+
+  return {
+    user,
+    transporter: nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        user,</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">mailer.js</div>
+  <div class="code-box">        pass
+      }
+    })
+  };
+};
+
+/**
+ * Send Royal M.S Fashion Verification OTP Email
+ * @param {string} toEmail - Recipient email
+ * @param {string} customerName - Recipient name
+ * @param {string} otp - 6-digit numeric OTP
+ * @returns {Promise&lt;{ success: boolean, mode: string, devOtp?: string }&gt;}
+ */
+export const sendOtpEmail = async (toEmail, customerName = 'Royal Guest', otp) =&gt; {
+  const smtpConfig = getTransporter();
+
+  // If credentials are not configured yet, run in development mode
+  if (!smtpConfig) {
+    console.log(`\n======================================================`);
+    console.log(`⚜️ [M.S FASHION MAILER (DEV MODE)]`);
+    console.log(`👑 Recipient: ${customerName} &lt;${toEmail}&gt;`);
+    console.log(`🔑 Verification OTP: ${otp}`);
+    console.log(`⏱️ Validity: 10 minutes`);
+    console.log(`💡 To send live emails, add SMTP_EMAIL and SMTP_PASSWORD in backend/.env`);
+    console.log(`======================================================\n`);
+
+    return {
+      success: true,
+      mode: 'dev',
+      devOtp: otp,
+      message: 'OTP generated in dev mode (check console or screen).'
+    };
+  }
+
+  // Luxury Royal Email Template
+  const htmlContent = `
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">mailer.js</div>
+  <div class="code-box">    &lt;head&gt;
+      &lt;meta charset="utf-8"&gt;
+      &lt;style&gt;
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #F7EFE2; margin: 0; padding: 24px; }
+        .card { max-width: 540px; margin: 0 auto; background-color: #FBF6EC; border: 2px solid #A9812F; box-shadow: 0 10px 25px rgba(28, 8, 11, 0.15); overflow: hidden; }
+        .header { background-color: #5C1A21; padding: 28px 20px; text-align: center; border-bottom: 2px solid #A9812F; }
+        .brand-title { color: #FBF6EC; font-size: 24px; font-weight: bold; letter-spacing: 4px; margin: 0; text-transform: uppercase; font-family: Georgia, serif; }
+        .tagline { color: #C5A869; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; margin-top: 6px; }
+        .body-content { padding: 32px 28px; color: #2B211D; }
+        .salutation { font-size: 16px; font-weight: 600; color: #5C1A21; margin-bottom: 12px; font-family: Georgia, serif; }
+        .intro { font-size: 13px; line-height: 1.6; color: #54453C; margin-bottom: 24px; }
+        .otp-box { background-color: #ECE2D2; border: 2px dashed #A9812F; border-radius: 4px; padding: 20px; text-align: center; margin: 24px 0; }
+        .otp-label { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #7A665A; font-weight: bold; margin-bottom: 8px; }
+        .otp-code { font-size: 36px; font-weight: 800; letter-spacing: 10px; color: #5C1A21; font-family: 'Courier New', Courier, monospace; margin: 0; }
+        .expiry-note { font-size: 11px; color: #8F6B24; margin-top: 8px; font-weight: 600; }
+        .security-note { font-size: 12px; color: #7A6E65; line-height: 1.5; border-top: 1px solid #E5D9C5; padding-top: 16px; margin-top: 20px; }
+        .footer { background-color: #1C080B; color: #A8988C; padding: 16px; text-align: center; font-size: 11px; letter-spacing: 1px; }
+        .footer a { color: #C5A869; text-decoration: none; }
+      &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      &lt;div class="card"&gt;
+        &lt;div class="header"&gt;
+          &lt;h1 class="brand-title"&gt;M.S FASHION&lt;/h1&gt;
+          &lt;div class="tagline"&gt;The Art of Bespoke Ethnic Menswear • Mumbai&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="body-content"&gt;
+          &lt;div class="salutation"&gt;Respected ${customerName},&lt;/div&gt;
+          &lt;p class="intro"&gt;
+            Thank you for choosing &lt;strong&gt;M.S Fashion&lt;/strong&gt; for your bespoke celebration attire.
+            Please use the 6-digit verification code below to verify your email and confirm your exclusive boutique appointment.
+          &lt;/p&gt;
+
+          &lt;div class="otp-box"&gt;
+            &lt;div class="otp-label"&gt;Appointment Verification Code&lt;/div&gt;
+            &lt;div class="otp-code"&gt;${otp}&lt;/div&gt;
+            &lt;div class="expiry-note"&gt;⏳ Valid for the next 10 minutes&lt;/div&gt;
+          &lt;/div&gt;</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">mailer.js</div>
+  <div class="code-box">
+          &lt;p class="security-note"&gt;
+            ⚠️ &lt;em&gt;If you did not request this appointment, please disregard this email. Never share this code with anyone.&lt;/em&gt;
+          &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class="footer"&gt;
+          Atelier: Sanaullah Compound, Dharavi Main Road, Mahim (East), Mumbai - 400017&lt;br&gt;
+          Direct Line: +91 89993 86222 • &lt;a href="https://maps.app.goo.gl/bK6BAQTHtguhqWo19"&gt;View Atelier on Google Maps&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+  `;
+
+  try {
+    const { user, transporter } = smtpConfig;
+    const sender = process.env.SMTP_EMAIL || user;
+    const info = await transporter.sendMail({
+      from: `"M.S Fashion Atelier" &lt;${sender}&gt;`,
+      to: toEmail,
+      subject: `👑 ${otp} is your M.S Fashion Appointment Verification Code`,
+      html: htmlContent
+    });
+
+    console.log(`[MAILER] OTP email delivered successfully to ${toEmail}. MessageId: ${info.messageId}`);
+    return {
+      success: true,
+      mode: 'live',
+      message: 'Verification OTP sent directly to your email inbox.'
+    };
+  } catch (error) {
+    console.error('[MAILER ERROR] Failed to send email via SMTP:', error);
+    // Fallback to dev output so user is never blocked even if SMTP password has a typo
+    return {
+      success: true,
+      mode: 'fallback',
+      devOtp: otp,
+      message: 'SMTP delivery encountered an issue. Dev OTP provided for verification.'</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">mailer.js</div>
+  <div class="code-box">    };
+  }
+};</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">productRoutes.js</div>
+  <div class="code-box">import express from 'express';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import Product from '../models/Product.js';
+import { categoriesData, productsData } from '../data/productsData.js';
+import { getDbStatus } from '../config/db.js';
+
+const router = express.Router();
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const rootDir = path.resolve(__dirname, '..');
+
+const dynamicCatalogFile = path.join(rootDir, 'data', 'dynamicCatalog.json');
+
+// Helper to check if the specific product's image exists
+const resolveProductImage = (product) =&gt; {
+  try {
+    if (product.realImageUrl &amp;&amp; typeof product.realImageUrl === 'string' &amp;&amp; product.realImageUrl.trim() !== '') {
+      return {
+        ...product,
+        hasRealImage: true,
+        realImageUrl: product.realImageUrl
+      };
+    }
+    if (product.imageFileName &amp;&amp; typeof product.imageFileName === 'string' &amp;&amp; product.imageFileName.trim() !== '') {
+      const candidatePaths = [
+        path.join(rootDir, product.folderPath || '', product.imageFileName),
+        path.join(rootDir, 'uploads', 'references', product.category || '', product.imageFileName)
+      ];
+      for (const cp of candidatePaths) {
+        if (fs.existsSync(cp)) {
+          const rel = cp.includes('uploads')
+            ? '/' + cp.slice(cp.indexOf('uploads')).replace(/\\/g, '/')
+            : `/uploads/references/${product.category}/${product.imageFileName}`;
+          return {
+            ...product,
+            hasRealImage: true,</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">productRoutes.js</div>
+  <div class="code-box">            realImageUrl: rel
+          };
+        }
+      }
+    }
+  } catch (err) {
+    // Ignore fs errors, fallback to placeholder
+  }
+  return {
+    ...product,
+    hasRealImage: false,
+    realImageUrl: null
+  };
+};
+
+// GET /api/categories - list 4 primary categories with 1st product representative image
+router.get('/categories', (req, res) =&gt; {
+  let catalog = productsData;
+  if (fs.existsSync(dynamicCatalogFile)) {
+    try {
+      const raw = fs.readFileSync(dynamicCatalogFile, 'utf8');
+      const parsed = JSON.parse(raw);
+      if (Array.isArray(parsed) &amp;&amp; parsed.length &gt; 0) {
+        catalog = parsed;
+      }
+    } catch (e) {}
+  }
+
+  const enrichedCategories = categoriesData.map((cat) =&gt; {
+    const catProds = catalog.filter((p) =&gt; p.category &amp;&amp; p.category.toLowerCase() === cat.name.toLowerCase());
+    const firstWithImg = catProds.find((p) =&gt; p.realImageUrl &amp;&amp; p.realImageUrl.trim() !== '') || catProds[0];
+    const resolved = firstWithImg ? resolveProductImage(firstWithImg) : null;
+    const finalImg = resolved?.realImageUrl || cat.realImageUrl || null;
+
+    return {
+      ...cat,
+      realImageUrl: finalImg,
+      hasRealImage: !!finalImg</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">productRoutes.js</div>
+  <div class="code-box">    };
+  });
+
+  res.json({
+    success: true,
+    count: enrichedCategories.length,
+    data: enrichedCategories
+  });
+});
+
+const getActiveCatalog = () =&gt; {
+  if (fs.existsSync(dynamicCatalogFile)) {
+    try {
+      const raw = fs.readFileSync(dynamicCatalogFile, 'utf8');
+      const parsed = JSON.parse(raw);
+      if (Array.isArray(parsed) &amp;&amp; parsed.length &gt; 0) {
+        return parsed;
+      }
+    } catch (e) {}
+  }
+  return productsData;
+};
+
+// GET /api/categories/:categoryId - get single category
+router.get('/categories/:categoryId', (req, res) =&gt; {
+  const categoryId = req.params.categoryId.toLowerCase();
+  const category = categoriesData.find(c =&gt; c.id.toLowerCase() === categoryId || c.name.toLowerCase() === categoryId);
+  if (!category) {
+    return res.status(404).json({ success: false, message: 'Category not found' });
+  }
+
+  // Get matching products from active dynamic catalog
+  const catalog = getActiveCatalog();
+  let categoryProducts = catalog.filter(p =&gt; p.category &amp;&amp; p.category.toLowerCase() === category.name.toLowerCase());
+  categoryProducts = categoryProducts.map(resolveProductImage);
+
+  // Sort category products strictly in ascending sequential ref order (1, 2, 3...)
+  categoryProducts.sort((a, b) =&gt; {</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">productRoutes.js</div>
+  <div class="code-box">    const numA = a.refNumber || parseInt(String(a.id || '').split('-').pop(), 10) || 0;
+    const numB = b.refNumber || parseInt(String(b.id || '').split('-').pop(), 10) || 0;
+    return numA - numB;
+  });
+
+  res.json({
+    success: true,
+    data: {
+      category,
+      products: categoryProducts
+    }
+  });
+});
+
+// GET /api/products - list all products with optional filters
+router.get('/products', async (req, res) =&gt; {
+  try {
+    const { category, subCategory, search } = req.query;
+    let results = [];
+
+    if (getDbStatus()) {
+      const query = {};
+      if (category) {
+        query.category = new RegExp(`^${category}$`, 'i');
+      }
+      if (subCategory &amp;&amp; subCategory !== 'all') {
+        const escaped = subCategory.replace(/[-_ ]/g, '[-_ ]?');
+        query.subCategory = new RegExp(`^${escaped}$`, 'i');
+      }
+      if (search) {
+        query.$or = [
+          { title: new RegExp(search, 'i') },
+          { description: new RegExp(search, 'i') },
+          { fabric: new RegExp(search, 'i') }
+        ];
+      }
+      const dbProducts = await Product.find(query).lean();
+      if (dbProducts.length &gt; 0) {</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">productRoutes.js</div>
+  <div class="code-box">        results = dbProducts;
+      } else {
+        // Fallback to active catalog if DB is empty
+        results = filterStaticProducts(category, subCategory, search);
+      }
+    } else {
+      results = filterStaticProducts(category, subCategory, search);
+    }
+
+    results = results.map(p =&gt; resolveProductImage(typeof p.toObject === 'function' ? p.toObject() : p));
+
+    // Sort results sequentially
+    results.sort((a, b) =&gt; {
+      const numA = a.refNumber || parseInt(String(a.id || '').split('-').pop(), 10) || 0;
+      const numB = b.refNumber || parseInt(String(b.id || '').split('-').pop(), 10) || 0;
+      return numA - numB;
+    });
+
+    res.json({
+      success: true,
+      count: results.length,
+      data: results
+    });
+  } catch (error) {
+    console.error('Error fetching products:', error);
+    res.status(500).json({ success: false, message: 'Server error retrieving products' });
+  }
+});
+
+// Helper for filtering products strictly by subCategory
+function filterStaticProducts(category, subCategory, search) {
+  const catalog = getActiveCatalog();
+  const clean = (s) =&gt; (s || '').toLowerCase().replace(/[-_\s]/g, '');
+
+  return catalog.filter(item =&gt; {
+    let match = true;
+    if (category) {
+      const normCat = clean(category);</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">productRoutes.js</div>
+  <div class="code-box">      const itemCat = clean(item.category);
+      if (normCat !== itemCat) match = false;
+    }
+    if (subCategory &amp;&amp; subCategory.toLowerCase() !== 'all') {
+      const normSub = clean(subCategory);
+      const itemSub = clean(item.subCategory);
+      if (itemSub !== normSub) match = false;
+    }
+    if (search) {
+      const s = search.toLowerCase();
+      if (!item.title.toLowerCase().includes(s) &amp;&amp; !item.description.toLowerCase().includes(s)) {
+        match = false;
+      }
+    }
+    return match;
+  });
+}
+
+// GET /api/products/:id - get product by ID with backward-compatible aliases
+router.get('/products/:id', async (req, res) =&gt; {
+  try {
+    const { id } = req.params;
+    const reqId = (id || '').toLowerCase().trim();
+    let product = null;
+
+    if (getDbStatus()) {
+      product = await Product.findOne({ id }).lean();
+    }
+
+    if (!product) {
+      const catalog = getActiveCatalog();
+
+      // 1. Exact ID match
+      product = catalog.find(p =&gt; p.id &amp;&amp; p.id.toLowerCase() === reqId);
+
+      // 2. Aliases array match (e.g. ['coat-01'] or ['sherwani-1791715600917'])
+      if (!product) {
+        product = catalog.find(p =&gt; Array.isArray(p.aliases) &amp;&amp; p.aliases.some(al =&gt; String(al).toLowerCase() === reqId));</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">productRoutes.js</div>
+  <div class="code-box">      }
+
+      // 3. Coat &lt;-&gt; Blazer interchangeable alias
+      if (!product) {
+        if (reqId.startsWith('coat-')) {
+          const altId = reqId.replace(/^coat-/, 'blazer-');
+          product = catalog.find(p =&gt; p.id &amp;&amp; p.id.toLowerCase() === altId);
+        } else if (reqId.startsWith('blazer-')) {
+          const altId = reqId.replace(/^blazer-/, 'coat-');
+          product = catalog.find(p =&gt; p.id &amp;&amp; p.id.toLowerCase() === altId);
+        }
+      }
+
+      // 4. Unpadded numeric alias (e.g. sherwani-1 matching sherwani-01)
+      if (!product) {
+        product = catalog.find(p =&gt; {
+          const pParts = String(p.id || '').toLowerCase().split('-');
+          const reqParts = reqId.split('-');
+          if (pParts.length &gt;= 2 &amp;&amp; reqParts.length &gt;= 2) {
+            const pPrefix = pParts.slice(0, -1).join('-');
+            const reqPrefix = reqParts.slice(0, -1).join('-');
+            const pNum = parseInt(pParts[pParts.length - 1], 10);
+            const reqNum = parseInt(reqParts[reqParts.length - 1], 10);
+            return pPrefix === reqPrefix &amp;&amp; !isNaN(pNum) &amp;&amp; !isNaN(reqNum) &amp;&amp; pNum === reqNum;
+          }
+          return false;
+        });
+      }
+    }
+
+    if (!product) {
+      return res.status(404).json({ success: false, message: 'Product not found' });
+    }
+
+    const resolved = resolveProductImage(product);
+    res.json({
+      success: true,
+      data: resolved</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">productRoutes.js</div>
+  <div class="code-box">    });
+  } catch (error) {
+    console.error('Error fetching product by ID:', error);
+    res.status(500).json({ success: false, message: 'Server error retrieving product' });
+  }
+});
+
+export default router;</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">server.js</div>
+  <div class="code-box">import express from 'express';
+import cors from 'cors';
+import dotenv from 'dotenv';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import { connectDB, getDbStatus } from './config/db.js';
+import productRoutes from './routes/productRoutes.js';
+import inquiryRoutes from './routes/inquiryRoutes.js';
+import adminRoutes, { globalBrandConfig, globalBanners } from './routes/adminRoutes.js';
+import Product from './models/Product.js';
+import { productsData } from './data/productsData.js';
+
+dotenv.config();
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const app = express();
+const PORT = process.env.PORT || 5000;
+
+// Middlewares
+app.use(cors());
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+// Serve static uploaded reference photos
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+
+// Health check endpoint
+app.get('/api/health', (req, res) =&gt; {
+  res.json({
+    status: 'online',
+    brand: 'M.S Fashion - Bespoke Ethnic Menswear',
+    timestamp: new Date().toISOString(),
+    databaseConnected: getDbStatus()
+  });
+});
+</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">server.js</div>
+  <div class="code-box">// Brand configuration endpoint
+app.get('/api/brand-config', (req, res) =&gt; {
+  res.json(globalBrandConfig);
+});
+
+// Public Banners endpoint
+app.get('/api/banners', (req, res) =&gt; {
+  res.json({ success: true, data: globalBanners });
+});
+
+// API Routes
+app.use('/api', productRoutes);
+app.use('/api/inquiries', inquiryRoutes);
+app.use('/api/admin', adminRoutes);
+
+// Seed database helper if MongoDB is connected
+const seedDatabaseIfEmpty = async () =&gt; {
+  if (!getDbStatus()) return;
+  try {
+    const count = await Product.countDocuments();
+    if (count === 0) {
+      console.log('[Seed] Seeding initial bespoke catalog into MongoDB...');
+      await Product.insertMany(productsData);
+      console.log(`[Seed] Seeded ${productsData.length} bespoke garments successfully.`);
+    }
+  } catch (err) {
+    console.error('[Seed Error]', err.message);
+  }
+};
+
+// Start Server
+const startServer = async () =&gt; {
+  await connectDB();
+  await seedDatabaseIfEmpty();
+
+  app.listen(PORT, () =&gt; {
+    console.log(`===================================================`);
+    console.log(`👑 M.S FASHION BESPOKE BACKEND SERVER RUNNING`);</div>
+</div>
+
+
+<div class="page">
+  <div class="code-title">server.js</div>
+  <div class="code-box">    console.log(`📍 Port: http://localhost:${PORT}`);
+    console.log(`🌐 API Endpoints: http://localhost:${PORT}/api/products`);
+    console.log(`📂 Static Uploads: http://localhost:${PORT}/uploads/references/`);
+    console.log(`===================================================`);
+  });
+};
+
+startServer();</div>
+</div>
+
+
+<!-- CHAPTER 7: RESULTS (EXACT SHIFA MATCH) -->
+<div class="page">
+  <h2 class="chapter-title">CHAPTER 7. RESULTS</h2>
+  <h3 class="section-title">7.1 Introduction</h3>
+  <p>The M.S Fashion: Bespoke Ethnic Menswear Platform was successfully developed and implemented according to the specified system requirements and design. The application provides an integrated digital atelier platform for managing different aspects of ethnic menswear exploration, dynamic pricing, and appointment consultations in a single web application.</p>
+  <p>The developed system includes modules for collection browsing, silhouette filtering, visual zoom calibration, accessory configuration, dynamic pricing estimation, royal email OTP verification, AI-based fashion styling assistance, and master administration. These modules were integrated to provide a convenient, transparent, and organized experience for bespoke clients and atelier master tailors.</p>
+  <p>The implemented modules were tested to ensure that the application functions correctly and that users can easily navigate between different features. The results obtained from the implementation and testing demonstrate that the major requirements of the proposed system were successfully achieved.</p>
+
+  <h3 class="section-title">7.2 Results</h3>
+  <p>The final implementation of the M.S Fashion application resulted in a functional web application with the major modules identified during the analysis and design phases. The developed system provides features for catalog exploration, interactive zoom, appointment management, WhatsApp consultation, AI styling assistance, and administrative management.</p>
+
+  <h4 class="subsection-title">7.2.1 Home & Navigation</h4>
+  <p>The Home & Navigation module introduces the main collection features of M.S Fashion through an editorial hero carousel, primary navigation header, partner brand marquee, and the floating Royal Stylist AI concierge badge.</p>
+  <div class="figure-box">
+    <img src="report_assets/01_homepage.png" alt="Home Page">
+    <div class="figure-caption">Figure 7.1: Home & Navigation Screen with Hero Carousel and Floating Stylist Badge</div>
+  </div>
+</div>
+
+<div class="page">
+  <h4 class="subsection-title">7.2.2 Category Catalog</h4>
+  <p>The Category Catalog module enables clients to browse garments by silhouette with real-time subcategory filter tabs (e.g. 'Jodhpuri With Jacket (6)', 'Without Jacket (4)') and clean grid cards.</p>
+  <div class="figure-box">
+    <img src="report_assets/02_category_grid.png" alt="Category Grid">
+    <div class="figure-caption">Figure 7.2: Category Catalog Interface with Live Silhouette Filter Counts</div>
+  </div>
+
+  <h4 class="subsection-title">7.2.3 Product Detail & Accessories</h4>
+  <p>The Product Detail module displays high-resolution garment photography alongside an interactive list of modular royal accessories (Mojdi, Safa, Mala, Dupatta) for customizable pairing.</p>
+  <div class="figure-box">
+    <img src="report_assets/03_product_detail.png" alt="Product Detail">
+    <div class="figure-caption">Figure 7.3: Product Detail View with Modular Royal Accessory Elements</div>
+  </div>
+</div>
+
+<div class="page">
+  <h4 class="subsection-title">7.2.4 CSS Zoom Viewer</h4>
+  <p>The CSS Zoom Viewer module provides 2.2x hardware-accelerated magnification focusing on intricate embroidery motifs and accessory accents with auto-fading crosshair pins.</p>
+  <div class="figure-box">
+    <img src="report_assets/04_zoom_active.png" alt="Zoom Active">
+    <div class="figure-caption">Figure 7.4: Hardware-Accelerated 2.2x CSS Zoom Viewer in Active Focus Mode</div>
+  </div>
+
+  <h4 class="subsection-title">7.2.5 Price Breakdown & WhatsApp</h4>
+  <p>The Price Breakdown module displays an itemized cost calculation for selected garments and accessories, accompanied by direct 'Contact via WhatsApp' routing with embedded photo URLs.</p>
+  <div class="figure-box">
+    <img src="report_assets/05_price_breakdown_top.png" alt="Price Modal Top">
+    <div class="figure-caption">Figure 7.5(a): Bespoke Price Breakdown Modal with Itemized Accessory Costing</div>
+  </div>
+  <div class="figure-box">
+    <img src="report_assets/05_price_breakdown_bottom.png" alt="Price Modal Bottom">
+    <div class="figure-caption">Figure 7.5(b): Client Customization Notes & Direct WhatsApp Consultation Action</div>
+  </div>
+</div>
+
+<div class="page">
+  <h4 class="subsection-title">7.2.6 Appointment Booking</h4>
+  <p>The Appointment Booking module captures client name, verified email, 10-digit phone number, preferred date, and a client-defined Expected Budget (Self Budget) freeform input.</p>
+  <div class="figure-box">
+    <img src="report_assets/06_appointment_form.png" alt="Appointment Form">
+    <div class="figure-caption">Figure 7.6: Private Consultation Booking Form with Freeform Self Budget Input</div>
+  </div>
+
+  <h4 class="subsection-title">7.2.7 Email OTP Verification</h4>
+  <p>The Email OTP Verification module validates client contact credentials through an automated 6-digit verification code dispatched via Gmail SMTP, eliminating appointment spam.</p>
+  <div class="figure-box">
+    <img src="report_assets/07_email_otp.png" alt="Email OTP">
+    <div class="figure-caption">Figure 7.7: Two-Step Royal Email OTP Verification Screen (6-Digit Authenticator)</div>
+  </div>
+</div>
+
+<div class="page">
+  <h4 class="subsection-title">7.2.8 Royal AI Stylist Chatbot</h4>
+  <p>The Royal AI Stylist Chatbot module provides 24/7 conversational assistance on groom wedding etiquette, 15+ body measurement protocols, pricing policies, and direct appointment booking.</p>
+  <div class="figure-box">
+    <img src="report_assets/08_ai_chatbot.png" alt="AI Chatbot">
+    <div class="figure-caption">Figure 7.8: Royal Atelier AI Stylist Chatbot Offering Conversational Fashion Guidance</div>
+  </div>
+
+  <h4 class="subsection-title">7.2.9 Master Admin Dashboard</h4>
+  <p>The Master Admin Dashboard module equips the atelier owner with real-time CRM lead management, verified email indicators, declared self-budget tracking, and direct WhatsApp client connect.</p>
+  <div class="figure-box">
+    <img src="report_assets/09_admin_dashboard.png" alt="Admin CRM">
+    <div class="figure-caption">Figure 7.9: Master Admin Dashboard Displaying Authenticated CRM Consultation Leads</div>
+  </div>
+</div>
+
+<!-- CHAPTER 8: CONCLUSION AND FUTURE SCOPE -->
+<div class="page">
+  <h2 class="chapter-title">CHAPTER 8. CONCLUSION AND FUTURE SCOPE</h2>
+  <h3 class="section-title">8.1 Conclusion</h3>
+  <p>The M.S Fashion: Bespoke Ethnic Menswear Platform was successfully designed, developed, and implemented to provide a centralized digital platform for managing bespoke menswear discovery, visual inspection, and client consultation. The system brings together various important tailoring functionalities within a single application, reducing the need to depend on manual records or unorganized communication methods.</p>
+  <p>The application allows users to browse collections, inspect embroidery with 2.2x zoom, select matching royal accessories, calculate transparent price estimations, book verified consultations with self-declared budgets, and communicate directly with the Master Tailor. The integration of the Royal Atelier AI Stylist further enhances the system with conversational fashion advice.</p>
+  <p>The system was developed using modern technologies including React, Tailwind CSS, Vite, Node.js, Express.js, MongoDB, Nodemailer, and WhatsApp protocols. Overall, M.S Fashion provides an efficient and convenient digital solution for bespoke menswear patrons and atelier tailors. The successful implementation and testing demonstrate that the proposed objectives and major functional requirements were achieved.</p>
+
+  <h3 class="section-title">8.2 Future Scope and Enhancement</h3>
+  <p>Although the current version of M.S Fashion provides the major functionalities required for bespoke menswear consultations, the system can be further enhanced with advanced features in future versions:</p>
+  <ul>
+    <li>1. WebXR Virtual 3D Mirror – Allow clients to virtually try on 3D digital garment twins using smartphone cameras.</li>
+    <li>2. Fabric Texture AI Analysis – Machine learning models to detect fabric thread density from user-uploaded swatches.</li>
+    <li>3. Multi-Lingual Voice Assistant – Expand AI chatbot to support Hindi, Gujarati, Marathi, and Urdu voice input.</li>
+    <li>4. Photogrammetric Body Measurement – Extract 15+ body measurements from 2D smartphone photos.</li>
+    <li>5. Workshop Inventory ERP – Real-time fabric bolt and embroidery thread inventory tracking for artisans.</li>
+    <li>6. Blockchain Provenance Certificates – Digital certificates guaranteeing pure Banarasi silk and Zardozi metals.</li>
+    <li>7. Multi-Branch Cloud Sync – Centralized database supporting multi-city boutique branches across India and abroad.</li>
+    <li>8. Native Mobile Apps – Build cross-platform Android and iOS apps using React Native and Expo.</li>
+    <li>9. Meta WhatsApp Cloud Webhooks – Automated bidirectional WhatsApp bot conversations with PDF catalogs.</li>
+    <li>10. Predictive Season Analytics – Demand forecasting models based on auspicious wedding calendar dates.</li>
+  </ul>
+</div>
+
+<!-- CHAPTER 9: REFERENCES -->
+<div class="page">
+  <h2 class="chapter-title">CHAPTER 9. REFERENCE</h2>
+  <p>1. https://react.dev/</p>
+  <p>2. https://tailwindcss.com/docs</p>
+  <p>3. https://nodejs.org/docs/latest/api/</p>
+  <p>4. https://expressjs.com/</p>
+  <p>5. https://www.mongodb.com/docs/</p>
+  <p>6. https://mongoosejs.com/docs/</p>
+  <p>7. https://vitejs.dev/guide/</p>
+  <p>8. https://nodemailer.com/</p>
+  <p>9. https://faq.whatsapp.com/5913398998672934</p>
+  <p>10. https://www.postman.com/downloads/</p>
+  <p>11. University of Mumbai – Guidelines for Project Dissertation for B.Sc. (Computer Science), 2026.</p>
+</div>
+
+</body>
+</html>

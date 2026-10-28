@@ -1,0 +1,18 @@
+[
+  {
+    "customerName": "Aslam Ansari",
+    "customerPhone": "+91 8999386222",
+    "customerEmail": "aslamans2007@gmail.com",
+    "city": "Vasai",
+    "consultationType": "custom-order",
+    "productId": "APPOINTMENT-SHERWANI",
+    "productTitle": "Bespoke Appointment (Imperial Wedding Sherwani)",
+    "selectedAccessories": [],
+    "estimatedTotal": 15000,
+    "budget": "15000",
+    "notes": "Expected Budget: 15000 | Preferred Date: This Weekend (14 Oct 2026) | Format: custom-order | Notes: ",
+    "status": "pending",
+    "createdAt": "2026-10-11T13:38:41.005Z",
+    "_id": "inq_1791725921005"
+  }
+]

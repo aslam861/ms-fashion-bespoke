@@ -39,3 +39,11 @@ test_tab_leader.docx
 *.sw?
 .DS_Store
 Thumbs.db
+
+# Presentation files (Personal viva use - do not push to git)
+*Presentation*
+*presentation*
+build_chapter7_pdf.py
+create_presentation_pdf.py
+generate_fast_presentation.py
+
